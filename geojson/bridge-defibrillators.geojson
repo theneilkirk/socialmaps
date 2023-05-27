@@ -1,0 +1,37 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "emergency": "defibrillator",
+                "indoor": "no",
+                "operator": "Bridge Parish Council"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13342180000,
+                    51.24223760000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "emergency": "defibrillator",
+                "indoor": "no",
+                "operator": "Bridge Parish Council"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12509820000,
+                    51.24633090000
+                ]
+            }
+        }
+    ]
+}

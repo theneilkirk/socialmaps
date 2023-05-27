@@ -1,0 +1,62 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 17:00",
+                "postal_code": "CT4",
+                "ref": "CT4 99",
+                "royal_cypher": "EIIR",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13336140000,
+                    51.23958820000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 17:30; Sa 11:45",
+                "operator": "Royal Mail",
+                "post_box:type": "pillar",
+                "ref": "CT4 254",
+                "royal_cypher": "EIIR"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12347880000,
+                    51.24777350000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "post_box:type": "wall",
+                "postal_code": "CT4",
+                "ref": "CT4 51",
+                "royal_cypher": "GVIR",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12625170000,
+                    51.24523080000
+                ]
+            }
+        }
+    ]
+}

@@ -1,0 +1,715 @@
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 17:30; Sa 11:00",
+                "operator": "Royal Mail",
+                "post_box:apertures": "2",
+                "post_box:design": "type_c",
+                "post_box:type": "pillar",
+                "ref": "CT1 3411;CT1 3412",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08112090000,
+                    51.27811910000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "ref": "CT4 29"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08636240000,
+                    51.25649270000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "brand": "Royal Mail",
+                "brand:wikidata": "Q638098",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:type": "private",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "building",
+                "post_box:type": "wall",
+                "postal_code": "CT3",
+                "ref": "CT3 355",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.16595430000,
+                    51.27303370000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT1",
+                "ref": "CT1 276",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08683220000,
+                    51.26792180000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 17:00; Sa 13:00",
+                "level": "0",
+                "operator": "Royal Mail",
+                "ref": "CT1 4"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08234450000,
+                    51.27805220000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT1",
+                "ref": "CT1 272",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.09053030000,
+                    51.26490130000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT1",
+                "ref": "CT1 230",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.09849630000,
+                    51.27786460000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "brand": "Royal Mail",
+                "brand:wikidata": "Q638098",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:type": "private",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "metal_post",
+                "post_box:type": "lamp",
+                "postal_code": "CT3",
+                "ref": "CT3 260",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.16968530000,
+                    51.27562840000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "Potlatch 0.10f",
+                "postal_code": "CT1",
+                "ref": "CT1 302"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.10362200000,
+                    51.27486660000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT4",
+                "ref": "CT4 222",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.14140400000,
+                    51.25947170000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "brick_pillar",
+                "post_box:type": "wall",
+                "postal_code": "CT3",
+                "ref": "CT3 161",
+                "royal_cypher": "GR",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.18454070000,
+                    51.27782070000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT1",
+                "ref": "CT1 48",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.09211470000,
+                    51.26900460000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT1",
+                "ref": "CT1 106",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08278030000,
+                    51.26914720000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 17:00",
+                "postal_code": "CT4",
+                "ref": "CT4 99",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13336140000,
+                    51.23958820000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "brand": "Royal Mail",
+                "brand:wikidata": "Q638098",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "wooden_post",
+                "post_box:type": "lamp",
+                "postal_code": "CT3",
+                "ref": "CT3 359",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.18576010000,
+                    51.23748810000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT1",
+                "ref": "CT1 11",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.09241920000,
+                    51.27749710000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT4",
+                "ref": "CT4 14",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13560700000,
+                    51.25547680000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT1",
+                "ref": "CT1 17"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.10060350000,
+                    51.27569900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 05:15; Sa 12:00",
+                "operator": "Royal Mail",
+                "operator:wikidata": "Q638098",
+                "post_box:design": "type_a",
+                "post_box:type": "pillar",
+                "postal_code": "CT3",
+                "ref": "CT3 396",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.16438020000,
+                    51.27387340000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT1",
+                "ref": "CT1 325",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.10115890000,
+                    51.27128390000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT1",
+                "ref": "CT1 1",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08999480000,
+                    51.27327970000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "brand": "Royal Mail",
+                "brand:wikidata": "Q638098",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "building",
+                "post_box:type": "wall",
+                "postal_code": "CT3",
+                "ref": "CT3 147",
+                "royal_cypher": "VR",
+                "royal_cypher:wikidata": "Q33102356",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.16199300000,
+                    51.26351370000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT1",
+                "ref": "CT1 101",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.09691750000,
+                    51.26817680000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT1",
+                "ref": "CT1 9",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08812790000,
+                    51.27126390000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT4",
+                "ref": "CT4 194",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.15244240000,
+                    51.25544690000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT4",
+                "ref": "CT4 237",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08005190000,
+                    51.24477070000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 17:00; Sa 13:00",
+                "indoor": "yes",
+                "level": "1",
+                "note:collection_times": "Additional collections may be made throughout the day until the last time shown.",
+                "operator": "Royal Mail",
+                "post_box:design": "off_street_box",
+                "post_box:type": "pillar",
+                "ref": "CT1 5",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08237400000,
+                    51.27805220000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 17:30; Sa 11:45",
+                "operator": "Royal Mail",
+                "post_box:type": "pillar",
+                "ref": "CT4 254",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12343050000,
+                    51.24776450000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "post_box:mounting": "metal_post",
+                "post_box:type": "lamp",
+                "postal_code": "CT3",
+                "ref": "CT3 282",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.15262870000,
+                    51.26752610000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "metal_post",
+                "post_box:type": "lamp",
+                "postal_code": "CT3",
+                "ref": "CT3 181",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.11706930000,
+                    51.27840150000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT4",
+                "ref": "CT4 225",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13465760000,
+                    51.26304730000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "building",
+                "post_box:type": "wall",
+                "postal_code": "CT4",
+                "ref": "CT4 51",
+                "royal_cypher": "GVIR",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12625170000,
+                    51.24523080000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "created_by": "JOSM",
+                "postal_code": "CT1",
+                "ref": "CT1 3",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08714440000,
+                    51.27761360000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT1",
+                "ref": "CT1 219",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.10008450000,
+                    51.26470220000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT1",
+                "ref": "CT1 40",
+                "source": "Bing"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.08332310000,
+                    51.27332810000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "brick_pillar",
+                "post_box:type": "wall",
+                "postal_code": "CT3",
+                "ref": "CT3 24",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.15868630000,
+                    51.27627980000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "survey:date": "2023-03-31"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.16434600000,
+                    51.27389020000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "post_box:mounting": "brick_pillar",
+                "post_box:type": "wall",
+                "postal_code": "CT4",
+                "ref": "CT4 201",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13598300000,
+                    51.22944540000
+                ]
+            }
+        }
+    ]
+}

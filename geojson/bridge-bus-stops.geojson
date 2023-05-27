@@ -1,0 +1,20 @@
+{
+"type": "FeatureCollection",
+"name": "sql_statement",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": null, "ref": "KNTGJWGP" }, "geometry": { "type": "Point", "coordinates": [ 1.1202689, 51.2504757 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "Station Road", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1198602, 51.2508115 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "White Horse", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1258254, 51.24557 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "White Horse", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.125662, 51.2459072 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": null, "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1258527, 51.2458968 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "Post Office", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1234775, 51.2477196 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "Post Office", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1238653, 51.2475203 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": null, "ref": "KNTDWDWT" }, "geometry": { "type": "Point", "coordinates": [ 1.1238199, 51.2475542 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": null, "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1231451, 51.2529341 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "The Lodge", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1233731, 51.2531553 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "Higham Lane", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1337225, 51.2390441 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "Higham Lane", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1330829, 51.2397539 ] } },
+{ "type": "Feature", "properties": { "highway": "bus_stop", "name": "The Steps", "ref": null }, "geometry": { "type": "Point", "coordinates": [ 1.1307518, 51.2419302 ] } }
+]
+}
