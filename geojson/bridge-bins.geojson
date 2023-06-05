@@ -1,0 +1,197 @@
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "black",
+                "survey:date": "2022-08-05",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12797010000,
+                    51.24740840000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "red",
+                "material": "plastic",
+                "survey:date": "2022-08-14",
+                "waste": "dog_excrement"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12966450000,
+                    51.24299690000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "recycling:glass": "yes",
+                "recycling:newspaper": "yes",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12039020000,
+                    51.25054440000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "black",
+                "survey:date": "2022-06-16",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12608780000,
+                    51.24765470000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "survey:date": "2022-06-18",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12933950000,
+                    51.24610830000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12930120000,
+                    51.24636690000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "Black",
+                "material": "plastic",
+                "survey:date": "2023-03-24",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12515400000,
+                    51.24625220000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "black",
+                "survey:date": "2022-08-14",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12567020000,
+                    51.24590590000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "survey:date": "2022-06-16",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12711430000,
+                    51.24697390000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "black",
+                "material": "plastic",
+                "survey:date": "2023-04-05",
+                "waste": "dog_excrement"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12444430000,
+                    51.24427090000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "Green",
+                "material": "plastic",
+                "survey:date": "2023-03-24",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12407480000,
+                    51.24586660000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "survey:date": "2022-06-16",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12740250000,
+                    51.24691190000
+                ]
+            }
+        }
+    ]
+}

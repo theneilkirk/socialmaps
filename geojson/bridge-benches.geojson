@@ -1,0 +1,186 @@
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "no",
+                "material": "wood",
+                "survey:date": "2022-04-08"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13223710000,
+                    51.24371500000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2023-04-05"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12331640000,
+                    51.24612580000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-09-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12648800000,
+                    51.24507080000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-08-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12597810000,
+                    51.24558480000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-08-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12619880000,
+                    51.24535900000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13656350000,
+                    51.24729270000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "no",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2023-04-05"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12386980000,
+                    51.24589020000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-06-18"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12881680000,
+                    51.24578890000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-08-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12964070000,
+                    51.24297080000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2023-03-24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12401900000,
+                    51.24587360000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "no"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13424980000,
+                    51.24425300000
+                ]
+            }
+        }
+    ]
+}

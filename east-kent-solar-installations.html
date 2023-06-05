@@ -5,7 +5,7 @@
 
 <!-- TITLE -->
 <title>
-East Kent Recycling Stations</title>
+TITLE</title>
 
 
 
@@ -20,8 +20,8 @@ p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:norma
 
 
 <!--BODY -->
-<h3>Recycling locations in East kent</h3>
-<p>Data downloaded from <a href="https://www.openstreetmap.org/#map=16/51.2441/1.1274">OpenStreetMap</a> on 2023-05-29</p>
+<h3>TITLE</h3>
+<p>Data downloaded from <a href="https://www.openstreetmap.org/#map=16/51.2441/1.1274">OpenStreetMap</a> on DATE</p>
 
 
 <!-- MAP -->
@@ -43,7 +43,7 @@ $(document).ready(function() {
   }).addTo(map);
   // async calls from: https://stackoverflow.com/questions/66355293/leaflet-how-to-fetch-geojson-from-url-and-pass-it-to-l-geojson
   
-  let url = 'https://raw.githubusercontent.com/theneilkirk/leafletmaps/main/geojson/east-kent-recycling-stations.geojson';
+  let url = 'https://raw.githubusercontent.com/theneilkirk/leafletmaps/main/geojson/east-kent-generators.geojson';
     const response = fetch(url).then(response => response.json()).then(response => {
       L.geoJson(response).addTo(map);
     });
