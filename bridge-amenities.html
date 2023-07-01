@@ -61,7 +61,8 @@ $(document).ready(function() {
           'post_box': L.icon({iconUrl: 'icons/post_box.png', iconSize: [25,35]}),
           'litter': L.icon({iconUrl: 'icons/litter_bin.png', iconSize: [25,30]}),
           'dog_excrement': L.icon({iconUrl: 'icons/dog_excrement_bin.png', iconSize: [25,30]}),
-          'bench': L.icon({iconUrl: 'icons/bench.png', iconSize: [25,25]})
+          'bench': L.icon({iconUrl: 'icons/bench.png', iconSize: [25,25]}),
+          'drinking_water': L.icon({iconUrl: 'icons/drinking_water.png', iconSize: [25,25]})
         };
         
         var marker;
@@ -84,6 +85,9 @@ $(document).ready(function() {
             marker.bindPopup(text);
             break;
           case 'bench':
+            marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.amenity]}).addTo(map);
+            break;
+          case 'drinking_water':
             marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.amenity]}).addTo(map);
             break;
           default:
