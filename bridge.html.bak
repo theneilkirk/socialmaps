@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Bridge Village Maps</h1>
+    <input name="Parish boundary" value="parish_boundary" type="checkbox" onchange="load_parish_boundary()">Parish boundary</input>
+    <div id="map" style="height:1000px; width:1200px;"></div>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin="">
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+crossorigin=""></script>
+    <script>
+$(document).ready(function() {
+  var map = L.map('map').setView([51.24594, 1.12559], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+  // async calls from: https://stackoverflow.com/questions/66355293/leaflet-how-to-fetch-geojson-from-url-and-pass-it-to-l-geojson
+  
+  async function load_parish_boundary() {
+      let url = 'https://www.planning.data.gov.uk/entity/130010415.geojson';
+      const response = await fetch(url)
+      const shape_obj = await response.json();
+      console.log(shape_obj);
+      var parish_boundary = L.geoJson(shape_obj,{style: {color: '#05A8AA'}}).addTo(map);
+      parish_boundary.bindPopup('<h3>Bridge Parish Boundary</h3><p>Source: <a href="https://www.planning.data.gov.uk">planning.gov.uk</a></p>');
+    }
+});
+</script>
+  </body>
+</html>
