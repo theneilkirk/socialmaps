@@ -23,9 +23,29 @@ p {font-family:Georgia, serif;font-size:14px;font-style:normal;font-weight:norma
 <h3>Bridge, Amenities</h3>
 <p>Data downloaded from <a href="https://www.openstreetmap.org/#map=16/51.2441/1.1274">OpenStreetMap</a> on 2023-07-01</p>
 
+<div class="rendered-form">
+    <div class="formbuilder-checkbox-group form-group field-amenities">
+        <label for="amenities" class="formbuilder-checkbox-group-label">Amenities</label>
+        <div class="checkbox-group">
+            <div class="formbuilder-checkbox">
+                <input name="amenities[]" access="false" id="amenities-0" value="benches" type="checkbox" onclick="toggle_benches(this);">
+                <label for="amenities-0">Benches</label>
+            </div>
+            <div class="formbuilder-checkbox">
+                <input name="amenities[]" access="false" id="amenities-1" value="drinking_water" type="checkbox">
+                <label for="amenities-1">Drinking water</label>
+            </div>
+            <div class="formbuilder-checkbox">
+                <input name="amenities[]" access="false" id="amenities-2" value="post_boxes" type="checkbox">
+                <label for="amenities-2">Post boxes</label>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- MAP -->
-<div id="map" style="height:1000px; width:1200px;"></div>
+<div id="map" style="height:400px; width:600px;"></div>
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <!-- Leaflet -->
@@ -44,58 +64,87 @@ $(document).ready(function() {
   // async calls from: https://stackoverflow.com/questions/66355293/leaflet-how-to-fetch-geojson-from-url-and-pass-it-to-l-geojson
   
   let url = 'https://raw.githubusercontent.com/theneilkirk/leafletmaps/main/geojson/bridge-amenities.geojson';
-    /*const response = fetch(url).then(response => response.json()).then(response => {
-      var marker = L.geoJson(response).addTo(map);
-      console.log("RESPONSE: ");
-      console.log(response);
-      console.log(marker);
-    });*/
+  var visible = [];
+    
+    async function toggle_benches(checkbox) {
+      var benches = [];
+      const icon = L.icon({iconUrl: 'icons/post_box.png', iconSize: [25,35]});
+      if (checkbox.checked) {
+        alert('checked');
+      } else {
+        alert('not checked');
+      }
+    }; 
     
     async function load_geojson() {
       const response = await fetch(url);
       var json = await response.json();    
       console.log(json.features);
       
-      json.features.forEach((element) => {
+      json.features.forEach((element, index) => {
         const icons = {
           'post_box': L.icon({iconUrl: 'icons/post_box.png', iconSize: [25,35]}),
           'litter': L.icon({iconUrl: 'icons/litter_bin.png', iconSize: [25,30]}),
           'dog_excrement': L.icon({iconUrl: 'icons/dog_excrement_bin.png', iconSize: [25,30]}),
           'bench': L.icon({iconUrl: 'icons/bench.png', iconSize: [25,25]}),
-          'drinking_water': L.icon({iconUrl: 'icons/drinking_water.png', iconSize: [25,25]})
+          'drinking_water': L.icon({iconUrl: 'icons/drinking_water.png', iconSize: [25,25]}),
+          'parking': L.icon({iconUrl: 'icons/parking.png', iconSize: [25,25]}),
+          'cafe': L.icon({iconUrl: 'icons/cafe.png', iconSize: [25,25]}),
+          'post_office': L.icon({iconUrl: 'icons/post_office.png', iconSize: [25,25]})
         };
         
         var marker;
-        switch (element.properties.amenity) {
-          case 'post_box':
-            marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.amenity]}).addTo(map);
-            marker.bindPopup('<p>Collection times:</br>' + element.properties.collection_times + '</p>');
-            break;
-          case 'waste_basket':
-            marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.waste]}).addTo(map);
-            var text;
-            switch (element.properties.waste) {
-              case 'litter':
-                text = '<p>Litter bin</p>';
-                break;
-              case 'dog_excrement':
-                text = '<p>Dog waste</p>';
-                break;
-            };
-            marker.bindPopup(text);
-            break;
-          case 'bench':
-            marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.amenity]}).addTo(map);
-            break;
-          case 'drinking_water':
-            marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.amenity]}).addTo(map);
-            break;
-          default:
-            console.log(element.properties.amenity);
-            break;
-        };
+        
+        if (element.geometry.coordinates.length == 2) {
+          switch (element.properties.amenity) {
+            case 'post_box':
+              marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.amenity]}).addTo(map);
+              marker.bindPopup('<p>Collection times:</br>' + element.properties.collection_times + '</p>');
+              break;
+            case 'waste_basket':
+              marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.waste]}).addTo(map);
+              var text;
+              switch (element.properties.waste) {
+                case 'litter':
+                  text = '<p>Litter bin</p>';
+                  break;
+                case 'dog_excrement':
+                  text = '<p>Dog waste bin 💩</p>';
+                  break;
+              };
+              marker.bindPopup(text);
+              break;
+            case 'bench':
+            case 'cafe':
+            case 'post_office':
+              marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.amenity]}).addTo(map);
+              break;
+            case 'drinking_water':
+              marker = L.marker([element.geometry.coordinates[1], element.geometry.coordinates[0]], {icon: icons[element.properties.amenity]}).addTo(map);
+              marker.bindPopup('<p>Drinking water tap</p>');
+              break;
+              break;
+            default:
+              console.log(index + ': ' + element.properties.amenity + ' (' + element.geometry.coordinates.length + ')');
+              break;
+          };
+        } else {
+          switch (element.properties.amenity) {
+/*            case 'parking':
+            case 'place_of_worship':
+            case 'social_facility':
+              marker = L.geoJson(element,{style: {color: '#05A8AA'}}).addTo(map);
+              marker.bindPopup('<p>' + element.properties.amenity + '</p>');
+              break; */
+            default:
+              console.log (index + ': ' + element.properties.amenity);
+              break;
+          };
+        }
       });
     }
+    
+    
     
     load_geojson();
 });
