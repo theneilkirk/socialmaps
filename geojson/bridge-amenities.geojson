@@ -5,438 +5,6 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "waste_basket",
-                "waste": "litter"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12930120000,
-                    51.24636690000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "bench",
-                "backrest": "yes",
-                "material": "wood",
-                "seats": "3",
-                "survey:date": "2022-09-19"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12648800000,
-                    51.24507080000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "access": "customers",
-                "amenity": "parking",
-                "fee": "no",
-                "parking": "surface"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12975200000,
-                            51.24680870000
-                        ],
-                        [
-                            1.12987500000,
-                            51.24672900000
-                        ],
-                        [
-                            1.12953710000,
-                            51.24652470000
-                        ],
-                        [
-                            1.12942160000,
-                            51.24659950000
-                        ],
-                        [
-                            1.12937390000,
-                            51.24657070000
-                        ],
-                        [
-                            1.12903790000,
-                            51.24679520000
-                        ],
-                        [
-                            1.12923600000,
-                            51.24691120000
-                        ],
-                        [
-                            1.12954210000,
-                            51.24669730000
-                        ],
-                        [
-                            1.12952310000,
-                            51.24668560000
-                        ],
-                        [
-                            1.12958090000,
-                            51.24664900000
-                        ],
-                        [
-                            1.12959540000,
-                            51.24665780000
-                        ],
-                        [
-                            1.12955050000,
-                            51.24668690000
-                        ],
-                        [
-                            1.12975200000,
-                            51.24680870000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "access": "yes",
-                "amenity": "drinking_water",
-                "bottle": "yes",
-                "fee": "no",
-                "man_made": "water_tap",
-                "survey:date": "2023-06-08",
-                "wheelchair": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12715900000,
-                    51.24457810000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "entrance": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12380760000,
-                    51.24700440000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "place_of_worship",
-                "building": "church",
-                "denomination": "anglican",
-                "name": "St Mary the Virgin, Bishopsbourne",
-                "religion": "christian",
-                "wikidata": "Q17529553"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.13250000000,
-                            51.23074180000
-                        ],
-                        [
-                            1.13210110000,
-                            51.23087500000
-                        ],
-                        [
-                            1.13205130000,
-                            51.23081650000
-                        ],
-                        [
-                            1.13245030000,
-                            51.23068340000
-                        ],
-                        [
-                            1.13250000000,
-                            51.23074180000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "post_box",
-                "collection_times": "Mo-Fr 09:00; Sa 07:00",
-                "operator": "Royal Mail",
-                "operator:wikidata": "Q638098",
-                "post_box:mounting": "building",
-                "post_box:type": "wall",
-                "postal_code": "CT4",
-                "ref": "CT4 51",
-                "royal_cypher": "GVIR",
-                "royal_cypher:wikidata": "Q33102169",
-                "source": "survey"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12625170000,
-                    51.24523080000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "bench",
-                "backrest": "yes",
-                "material": "wood",
-                "seats": "3",
-                "survey:date": "2022-08-14"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12597810000,
-                    51.24558480000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "bench",
-                "backrest": "yes",
-                "material": "wood",
-                "seats": "3",
-                "survey:date": "2023-03-24"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12401900000,
-                    51.24587360000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "colour": "black",
-                "material": "plastic",
-                "survey:date": "2023-04-05",
-                "waste": "dog_excrement"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12444430000,
-                    51.24427090000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "bench",
-                "backrest": "yes",
-                "material": "wood",
-                "seats": "3",
-                "survey:date": "2022-06-18"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12881680000,
-                    51.24578890000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "addr:housename": "Saxon Lodge",
-                "addr:housenumber": "30",
-                "addr:street": "Western Avenue",
-                "amenity": "social_facility",
-                "building": "apartments",
-                "name": "Saxon Lodge",
-                "social_facility": "nursing_home"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12271090000,
-                            51.24606750000
-                        ],
-                        [
-                            1.12300390000,
-                            51.24613450000
-                        ],
-                        [
-                            1.12299490000,
-                            51.24614980000
-                        ],
-                        [
-                            1.12303750000,
-                            51.24615960000
-                        ],
-                        [
-                            1.12302060000,
-                            51.24618850000
-                        ],
-                        [
-                            1.12305740000,
-                            51.24619690000
-                        ],
-                        [
-                            1.12295340000,
-                            51.24637530000
-                        ],
-                        [
-                            1.12261560000,
-                            51.24629800000
-                        ],
-                        [
-                            1.12265100000,
-                            51.24623750000
-                        ],
-                        [
-                            1.12283920000,
-                            51.24628050000
-                        ],
-                        [
-                            1.12286500000,
-                            51.24623630000
-                        ],
-                        [
-                            1.12283440000,
-                            51.24622940000
-                        ],
-                        [
-                            1.12284080000,
-                            51.24621850000
-                        ],
-                        [
-                            1.12279090000,
-                            51.24620710000
-                        ],
-                        [
-                            1.12279690000,
-                            51.24619670000
-                        ],
-                        [
-                            1.12265450000,
-                            51.24616410000
-                        ],
-                        [
-                            1.12271090000,
-                            51.24606750000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "colour": "black",
-                "survey:date": "2022-06-16",
-                "waste": "litter"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12608780000,
-                    51.24765470000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "veterinary",
-                "name": "Bourne Veterinary Practice"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.14801300000,
-                    51.25441840000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Canterbury",
-                "addr:housename": "Chalkpit Farm",
-                "addr:postcode": "CT4 5EU",
-                "addr:street": "Chalkpit Hill",
-                "addr:village": "Bekesbourne",
-                "amenity": "cafe",
-                "fhrs:id": "1102189",
-                "name": "Mama Feelgood's Coffee Shop",
-                "source:addr": "FHRS Open Data"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.14793170000,
-                    51.25487410000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "bench",
-                "backrest": "yes",
-                "material": "wood",
-                "seats": "3",
-                "survey:date": "2023-04-05"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12331640000,
-                    51.24612580000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "survey:date": "2022-06-16",
-                "waste": "litter"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12740250000,
-                    51.24691190000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "barrier": "gate"
             },
             "geometry": {
@@ -450,614 +18,39 @@
         {
             "type": "Feature",
             "properties": {
-                "addr:city": "Bridge",
-                "addr:housename": "The Red Lion Inn",
-                "addr:housenumber": "75",
-                "addr:postcode": "CT4 5LB",
-                "addr:street": "High Street",
-                "amenity": "post_office",
-                "name": "The Red Lion Inn",
-                "opening_hours": "We,Fr 09:00-11:00",
-                "ref:pol_id": "168587"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12675830000,
-                    51.24509830000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Canterbury",
-                "addr:postcode": "CT4 5HX",
-                "addr:street": "The Street",
-                "addr:village": "Bishopsbourne",
-                "amenity": "pub",
-                "contact:phone": "+44 1227 830581",
-                "contact:twitter": "TheMedmaidInn1",
-                "contact:website": "https://www.mermaidinnbishopsbourne.co.uk/",
-                "fhrs:id": "1274310",
-                "name": "Mermaid Inn",
-                "opening_hours": "Mo-Tu 18:00-23:00;We-Fr 12:00-15:00,18:00-23:00;Sa 12:00-23:00;Su 12:00-18:30",
-                "source:addr": "FHRS Open Data"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.13586410000,
-                    51.22945500000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "addr:housenumber": "6",
-                "addr:postcode": "CT4 5LS",
-                "addr:street": "Western Avenue",
-                "amenity": "cafe",
-                "building": "yes",
-                "contact:facebook": "https://www.facebook.com/mahoneysofbridge/",
-                "cuisine": "coffee_shop",
-                "email": "mahoneysofbridge@gmail.com",
-                "name": "Mahoney's",
-                "outdoor_seating": "yes"
+                "amenity": "grave_yard"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            1.12484280000,
-                            51.24616620000
+                            1.13600490000,
+                            51.25354620000
                         ],
                         [
-                            1.12472590000,
-                            51.24612350000
+                            1.13612120000,
+                            51.25371000000
                         ],
                         [
-                            1.12464260000,
-                            51.24622090000
+                            1.13682930000,
+                            51.25346490000
                         ],
                         [
-                            1.12475850000,
-                            51.24625900000
+                            1.13664160000,
+                            51.25334410000
                         ],
                         [
-                            1.12484280000,
-                            51.24616620000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "addr:housenumber": "28",
-                "addr:postcode": "CT4 5JZ",
-                "addr:street": "High Street",
-                "amenity": "community_centre",
-                "building": "public",
-                "community_centre": "village_hall",
-                "fhrs:id": "1102698",
-                "level": "0",
-                "name": "Bridge Village Hall",
-                "operator": "Bridge Parish Council",
-                "source:addr": "FHRS Open Data;knowledge",
-                "website": "http://www.bridgevillagehall.org.uk/",
-                "wheelchair": "yes"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12420190000,
-                            51.24710730000
+                            1.13644310000,
+                            51.25325680000
                         ],
                         [
-                            1.12392750000,
-                            51.24699960000
+                            1.13617390000,
+                            51.25343190000
                         ],
                         [
-                            1.12384490000,
-                            51.24696720000
-                        ],
-                        [
-                            1.12380760000,
-                            51.24700440000
-                        ],
-                        [
-                            1.12379270000,
-                            51.24701930000
-                        ],
-                        [
-                            1.12380930000,
-                            51.24702580000
-                        ],
-                        [
-                            1.12387520000,
-                            51.24705160000
-                        ],
-                        [
-                            1.12414970000,
-                            51.24715940000
-                        ],
-                        [
-                            1.12417150000,
-                            51.24713770000
-                        ],
-                        [
-                            1.12417590000,
-                            51.24713330000
-                        ],
-                        [
-                            1.12420190000,
-                            51.24710730000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "access": "customers",
-                "amenity": "parking",
-                "fee": "no"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.14824190000,
-                            51.25484010000
-                        ],
-                        [
-                            1.14820340000,
-                            51.25489640000
-                        ],
-                        [
-                            1.14779570000,
-                            51.25474020000
-                        ],
-                        [
-                            1.14803380000,
-                            51.25449670000
-                        ],
-                        [
-                            1.14828750000,
-                            51.25460820000
-                        ],
-                        [
-                            1.14816060000,
-                            51.25472680000
-                        ],
-                        [
-                            1.14824190000,
-                            51.25484010000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "colour": "red",
-                "material": "plastic",
-                "survey:date": "2022-08-14",
-                "waste": "dog_excrement"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12966450000,
-                    51.24299690000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "door": "hinged",
-                "entrance": "main"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12417590000,
-                    51.24713330000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "telephone",
-                "booth": "KX100",
-                "check_date": "2022-10-05",
-                "covered": "booth"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12341060000,
-                    51.24780520000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "access": "yes",
-                "amenity": "parking",
-                "capacity": "11",
-                "fee": "no",
-                "parking": "street_side"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12969060000,
-                            51.24632780000
-                        ],
-                        [
-                            1.12941100000,
-                            51.24616040000
-                        ],
-                        [
-                            1.12947420000,
-                            51.24611750000
-                        ],
-                        [
-                            1.12978310000,
-                            51.24628350000
-                        ],
-                        [
-                            1.12969060000,
-                            51.24632780000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "place_of_worship",
-                "denomination": "anglican",
-                "name": "St Peter's Church",
-                "religion": "christian",
-                "source": "Bing",
-                "wikidata": "Q17529612"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.14431850000,
-                            51.25621130000
-                        ],
-                        [
-                            1.14427640000,
-                            51.25614880000
-                        ],
-                        [
-                            1.14447140000,
-                            51.25609740000
-                        ],
-                        [
-                            1.14443490000,
-                            51.25604310000
-                        ],
-                        [
-                            1.14463080000,
-                            51.25599140000
-                        ],
-                        [
-                            1.14470940000,
-                            51.25610820000
-                        ],
-                        [
-                            1.14431850000,
-                            51.25621130000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "access": "customers",
-                "amenity": "parking",
-                "fee": "no",
-                "lit": "no",
-                "park_ride": "no",
-                "parking": "surface",
-                "smoothness": "intermediate",
-                "supervised": "no",
-                "surface": "ground"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.13570760000,
-                            51.23266580000
-                        ],
-                        [
-                            1.13593030000,
-                            51.23276400000
-                        ],
-                        [
-                            1.13641040000,
-                            51.23218040000
-                        ],
-                        [
-                            1.13624010000,
-                            51.23210980000
-                        ],
-                        [
-                            1.13570760000,
-                            51.23266580000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "survey:date": "2022-06-16",
-                "waste": "litter"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12711430000,
-                    51.24697390000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "atm",
-                "cash_in": "no",
-                "operator": "Cashzone"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12511130000,
-                    51.24633340000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "amenity": "medical_centre",
-                "building": "yes",
-                "healthcare": "centre",
-                "name": "Bridge Health Centre",
-                "source": "Bing"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12938000000,
-                            51.24695160000
-                        ],
-                        [
-                            1.12932150000,
-                            51.24691690000
-                        ],
-                        [
-                            1.12946040000,
-                            51.24682500000
-                        ],
-                        [
-                            1.12944360000,
-                            51.24681500000
-                        ],
-                        [
-                            1.12952960000,
-                            51.24675820000
-                        ],
-                        [
-                            1.12966140000,
-                            51.24683630000
-                        ],
-                        [
-                            1.12959150000,
-                            51.24688250000
-                        ],
-                        [
-                            1.12961060000,
-                            51.24689380000
-                        ],
-                        [
-                            1.12956570000,
-                            51.24692340000
-                        ],
-                        [
-                            1.12954650000,
-                            51.24691200000
-                        ],
-                        [
-                            1.12942720000,
-                            51.24699080000
-                        ],
-                        [
-                            1.12937100000,
-                            51.24695750000
-                        ],
-                        [
-                            1.12938000000,
-                            51.24695160000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "bench",
-                "backrest": "yes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.13656350000,
-                    51.24729270000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "colour": "black",
-                "survey:date": "2022-08-05",
-                "waste": "litter"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12797010000,
-                    51.24740840000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "addr:country": "GB",
-                "addr:county": "Kent",
-                "addr:postcode": "CT4 5JX",
-                "addr:street": "Conyngham Lane",
-                "addr:village": "Bridge",
-                "amenity": "school",
-                "denomination": "anglican",
-                "fhrs:id": "1103480",
-                "isced:level": "1",
-                "name": "Bridge and Patrixbourne Church of England Primary School",
-                "phone": "+44 1227 830276",
-                "ref:edubase": "118654",
-                "religion": "christian",
-                "website": "http://www.bridge.kent.sch.uk/",
-                "wikidata": "Q66226431"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12605390000,
-                            51.24768560000
-                        ],
-                        [
-                            1.12674420000,
-                            51.24827320000
-                        ],
-                        [
-                            1.12708580000,
-                            51.24852080000
-                        ],
-                        [
-                            1.12576930000,
-                            51.24941410000
-                        ],
-                        [
-                            1.12552120000,
-                            51.24871750000
-                        ],
-                        [
-                            1.12564110000,
-                            51.24866510000
-                        ],
-                        [
-                            1.12505460000,
-                            51.24821880000
-                        ],
-                        [
-                            1.12605390000,
-                            51.24768560000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "recycling:glass": "yes",
-                "recycling:newspaper": "yes",
-                "waste": "litter"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12039020000,
-                    51.25054440000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "place_of_worship",
-                "building": "church",
-                "denomination": "anglican",
-                "name": "St Mary's",
-                "religion": "christian",
-                "wikidata": "Q17529616"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.13627930000,
-                            51.25348670000
-                        ],
-                        [
-                            1.13634420000,
-                            51.25355650000
-                        ],
-                        [
-                            1.13662250000,
-                            51.25345520000
-                        ],
-                        [
-                            1.13655760000,
-                            51.25338540000
-                        ],
-                        [
-                            1.13627930000,
-                            51.25348670000
+                            1.13600490000,
+                            51.25354620000
                         ]
                     ]
                 ]
@@ -1163,16 +156,185 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "bench",
-                "backrest": "no",
-                "material": "wood",
-                "survey:date": "2022-04-08"
+                "amenity": "post_box",
+                "post_box:mounting": "brick_pillar",
+                "post_box:type": "wall",
+                "postal_code": "CT4",
+                "ref": "CT4 201",
+                "source": "survey"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.13223710000,
-                    51.24371500000
+                    1.13598300000,
+                    51.22944540000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "townhall",
+                "name": "Bishopsbourne Village Hall"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13512550000,
+                    51.23018150000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "addr:country": "GB",
+                "addr:county": "Kent",
+                "addr:postcode": "CT4 5JX",
+                "addr:street": "Conyngham Lane",
+                "addr:village": "Bridge",
+                "amenity": "school",
+                "denomination": "anglican",
+                "fhrs:id": "1103480",
+                "isced:level": "1",
+                "name": "Bridge and Patrixbourne Church of England Primary School",
+                "phone": "+44 1227 830276",
+                "ref:edubase": "118654",
+                "religion": "christian",
+                "website": "http://www.bridge.kent.sch.uk/",
+                "wikidata": "Q66226431"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12605390000,
+                            51.24768560000
+                        ],
+                        [
+                            1.12674420000,
+                            51.24827320000
+                        ],
+                        [
+                            1.12708580000,
+                            51.24852080000
+                        ],
+                        [
+                            1.12576930000,
+                            51.24941410000
+                        ],
+                        [
+                            1.12552120000,
+                            51.24871750000
+                        ],
+                        [
+                            1.12564110000,
+                            51.24866510000
+                        ],
+                        [
+                            1.12505460000,
+                            51.24821880000
+                        ],
+                        [
+                            1.12605390000,
+                            51.24768560000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bicycle_parking",
+                "bicycle_parking": "wall_loops",
+                "capacity": "3",
+                "covered": "no",
+                "cyclestreets_id": "48419"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12947000000,
+                    51.24678870000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "door": "hinged",
+                "entrance": "main"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12417590000,
+                    51.24713330000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12930120000,
+                    51.24636690000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "survey:date": "2022-06-18",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12933950000,
+                    51.24610830000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "access": "yes",
+                "amenity": "grit_bin",
+                "material": "plastic",
+                "survey:date": "2023-07-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12223550000,
+                    51.24879700000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-09-19"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12648800000,
+                    51.24507080000
                 ]
             }
         },
@@ -1225,31 +387,139 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "post_box",
-                "postal_code": "CT4",
-                "ref": "CT4 222",
-                "source": "survey"
+                "amenity": "waste_basket",
+                "survey:date": "2022-06-16",
+                "waste": "litter"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.14140400000,
-                    51.25947170000
+                    1.12711430000,
+                    51.24697390000
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "amenity": "cafe",
-                "cuisine": "coffee_shop",
-                "name": "Tadpoles Tea Room"
+                "access": "yes",
+                "amenity": "drinking_water",
+                "bottle": "yes",
+                "fee": "no",
+                "man_made": "water_tap",
+                "survey:date": "2023-06-08",
+                "wheelchair": "yes"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.13572510000,
-                    51.23206630000
+                    1.12715900000,
+                    51.24457810000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13656350000,
+                    51.24729270000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "townhall",
+                "name": "Bekesbourne Village Hall",
+                "townhall:type": "village"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13934980000,
+                    51.26031670000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "addr:housenumber": "6",
+                "addr:postcode": "CT4 5LS",
+                "addr:street": "Western Avenue",
+                "amenity": "cafe",
+                "building": "yes",
+                "contact:facebook": "https://www.facebook.com/mahoneysofbridge/",
+                "cuisine": "coffee_shop",
+                "email": "mahoneysofbridge@gmail.com",
+                "name": "Mahoney's",
+                "outdoor_seating": "yes"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12484280000,
+                            51.24616620000
+                        ],
+                        [
+                            1.12472590000,
+                            51.24612350000
+                        ],
+                        [
+                            1.12464260000,
+                            51.24622090000
+                        ],
+                        [
+                            1.12475850000,
+                            51.24625900000
+                        ],
+                        [
+                            1.12484280000,
+                            51.24616620000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "access": "yes",
+                "amenity": "grit_bin",
+                "material": "plastic",
+                "survey:date": "2023-07-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.11624610000,
+                    51.24792180000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2023-04-05"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12331640000,
+                    51.24612580000
                 ]
             }
         },
@@ -1277,90 +547,24 @@
         {
             "type": "Feature",
             "properties": {
-                "addr:city": "Bridge",
-                "amenity": "place_of_worship",
-                "building": "church",
-                "denomination": "anglican",
-                "name": "St. Peter's",
-                "religion": "christian",
-                "wikidata": "Q17557230"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12695260000,
-                            51.24447280000
-                        ],
-                        [
-                            1.12687800000,
-                            51.24433290000
-                        ],
-                        [
-                            1.12709480000,
-                            51.24428760000
-                        ],
-                        [
-                            1.12712670000,
-                            51.24434750000
-                        ],
-                        [
-                            1.12723580000,
-                            51.24432470000
-                        ],
-                        [
-                            1.12725990000,
-                            51.24436990000
-                        ],
-                        [
-                            1.12716830000,
-                            51.24438910000
-                        ],
-                        [
-                            1.12718690000,
-                            51.24442380000
-                        ],
-                        [
-                            1.12695260000,
-                            51.24447280000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "telephone",
-                "booth": "K6",
-                "covered": "booth",
-                "listed_status": "Grade II"
+                "addr:city": "Canterbury",
+                "addr:postcode": "CT4 5HX",
+                "addr:street": "The Street",
+                "addr:village": "Bishopsbourne",
+                "amenity": "pub",
+                "contact:phone": "+44 1227 830581",
+                "contact:twitter": "TheMedmaidInn1",
+                "contact:website": "https://www.mermaidinnbishopsbourne.co.uk/",
+                "fhrs:id": "1274310",
+                "name": "Mermaid Inn",
+                "opening_hours": "Mo-Tu 18:00-23:00;We-Fr 12:00-15:00,18:00-23:00;Sa 12:00-23:00;Su 12:00-18:30",
+                "source:addr": "FHRS Open Data"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.13591740000,
-                    51.22935840000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "post_box",
-                "collection_times": "Mo-Fr 09:00; Sa 17:00",
-                "postal_code": "CT4",
-                "ref": "CT4 99",
-                "royal_cypher": "EIIR",
-                "royal_cypher:wikidata": "Q33102113",
-                "source": "survey"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.13336140000,
-                    51.23958820000
+                    1.13586410000,
+                    51.22945500000
                 ]
             }
         },
@@ -1398,19 +602,14 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "post_box",
-                "collection_times": "Mo-Fr 17:30; Sa 11:45",
-                "operator": "Royal Mail",
-                "post_box:type": "pillar",
-                "ref": "CT4 254",
-                "royal_cypher": "EIIR",
-                "royal_cypher:wikidata": "Q33102113"
+                "door": "hinged",
+                "entrance": "yes"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.12343050000,
-                    51.24776450000
+                    1.12380760000,
+                    51.24700440000
                 ]
             }
         },
@@ -1418,79 +617,39 @@
             "type": "Feature",
             "properties": {
                 "amenity": "post_box",
-                "post_box:mounting": "brick_pillar",
+                "collection_times": "Mo-Fr 09:00; Sa 07:00",
+                "operator": "Royal Mail",
+                "operator:wikidata": "Q638098",
+                "post_box:mounting": "building",
                 "post_box:type": "wall",
                 "postal_code": "CT4",
-                "ref": "CT4 201",
+                "ref": "CT4 51",
+                "royal_cypher": "GVIR",
+                "royal_cypher:wikidata": "Q33102169",
                 "source": "survey"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.13598300000,
-                    51.22944540000
+                    1.12625170000,
+                    51.24523080000
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "addr:city": "Bridge",
-                "addr:housenumber": "16",
-                "addr:postcode": "CT4 5JY",
-                "addr:street": "High Street",
-                "amenity": "pharmacy",
-                "building": "yes",
-                "dispensing": "yes",
-                "fhrs:id": "1102900",
-                "healthcare": "pharmacy",
-                "name": "Bridge Pharmacy",
-                "source:addr": "FHRS Open Data"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12348120000,
-                            51.24769460000
-                        ],
-                        [
-                            1.12340230000,
-                            51.24776140000
-                        ],
-                        [
-                            1.12333570000,
-                            51.24773060000
-                        ],
-                        [
-                            1.12328370000,
-                            51.24770650000
-                        ],
-                        [
-                            1.12336270000,
-                            51.24763970000
-                        ],
-                        [
-                            1.12348120000,
-                            51.24769460000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "survey:date": "2022-06-18",
-                "waste": "litter"
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-06-18"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.12933950000,
-                    51.24610830000
+                    1.12881680000,
+                    51.24578890000
                 ]
             }
         },
@@ -1536,273 +695,6 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "bench",
-                "backrest": "no",
-                "material": "wood",
-                "seats": "3",
-                "survey:date": "2023-04-05"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12386980000,
-                    51.24589020000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "addr:housenumber": "78",
-                "addr:postcode": "CT4 5LA",
-                "addr:street": "High Street",
-                "amenity": "dentist",
-                "building": "yes",
-                "healthcare": "dentist",
-                "name": "Bridge Dental Practice",
-                "phone": "+441227831110",
-                "website": "https://www.bridgepractice.dental/"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12566960000,
-                            51.24557280000
-                        ],
-                        [
-                            1.12569360000,
-                            51.24553830000
-                        ],
-                        [
-                            1.12583310000,
-                            51.24557630000
-                        ],
-                        [
-                            1.12580920000,
-                            51.24561070000
-                        ],
-                        [
-                            1.12566960000,
-                            51.24557280000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "waste_basket",
-                "colour": "Green",
-                "material": "plastic",
-                "survey:date": "2023-03-24",
-                "waste": "litter"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12407480000,
-                    51.24586660000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "bench",
-                "backrest": "yes",
-                "material": "wood",
-                "seats": "3",
-                "survey:date": "2022-08-14"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12964070000,
-                    51.24297080000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "addr:housenumber": "75",
-                "addr:postcode": "CT4 5LB",
-                "addr:street": "High Street",
-                "amenity": "marketplace",
-                "name": "Bridge Farmers Market",
-                "opening_hours": "Sa [2,4] 09:00-12:00",
-                "operator": "Kent Farmers Markets",
-                "website": "https://www.kfma.org.uk/Bridge"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.12676280000,
-                    51.24527350000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "addr:housenumber": "86",
-                "addr:postcode": "CT4 5LA",
-                "addr:street": "High Street",
-                "amenity": "pub",
-                "brewery": "yes",
-                "building": "yes",
-                "contact:phone": "+44 1227 507336",
-                "contact:website": "https://www.ploughandharrowbridge.co.uk/",
-                "fhrs:id": "1103406",
-                "name": "Plough & Harrow",
-                "opening_hours": "Mo-Fr 15:00-23:00;Sa-Su 12:00-23:00",
-                "outdoor_seating": "yes",
-                "source:addr": "FHRS Open Data",
-                "wikidata": "Q26391324"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12571610000,
-                            51.24517000000
-                        ],
-                        [
-                            1.12605150000,
-                            51.24534570000
-                        ],
-                        [
-                            1.12609210000,
-                            51.24530430000
-                        ],
-                        [
-                            1.12610450000,
-                            51.24528550000
-                        ],
-                        [
-                            1.12610250000,
-                            51.24527240000
-                        ],
-                        [
-                            1.12608580000,
-                            51.24526160000
-                        ],
-                        [
-                            1.12596280000,
-                            51.24517470000
-                        ],
-                        [
-                            1.12592030000,
-                            51.24520310000
-                        ],
-                        [
-                            1.12584710000,
-                            51.24515650000
-                        ],
-                        [
-                            1.12579010000,
-                            51.24511890000
-                        ],
-                        [
-                            1.12571610000,
-                            51.24517000000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "grave_yard"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.13237400000,
-                            51.23124330000
-                        ],
-                        [
-                            1.13281990000,
-                            51.23086500000
-                        ],
-                        [
-                            1.13228880000,
-                            51.23052580000
-                        ],
-                        [
-                            1.13190260000,
-                            51.23079950000
-                        ],
-                        [
-                            1.13177890000,
-                            51.23086190000
-                        ],
-                        [
-                            1.13234130000,
-                            51.23121640000
-                        ],
-                        [
-                            1.13237400000,
-                            51.23124330000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "addr:city": "Bridge",
-                "addr:postcode": "CT4 5JX",
-                "addr:street": "Conyngham Lane",
-                "amenity": "childcare",
-                "building": "yes",
-                "name": "Woodpeckers Nursery",
-                "operator": "Woodpeckers Nursery",
-                "operator:type": "private",
-                "website": "https://www.woodpeckersnursery.co.uk/"
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            1.12603400000,
-                            51.24813820000
-                        ],
-                        [
-                            1.12588570000,
-                            51.24802170000
-                        ],
-                        [
-                            1.12605870000,
-                            51.24793540000
-                        ],
-                        [
-                            1.12620700000,
-                            51.24805200000
-                        ],
-                        [
-                            1.12603400000,
-                            51.24813820000
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "amenity": "waste_basket",
                 "colour": "Black",
                 "material": "plastic",
@@ -1814,6 +706,361 @@
                 "coordinates": [
                     1.12515400000,
                     51.24625220000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "cafe",
+                "cuisine": "coffee_shop",
+                "name": "Tadpoles Tea Room"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13572510000,
+                    51.23206630000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Canterbury",
+                "addr:housename": "Chalkpit Farm",
+                "addr:postcode": "CT4 5EU",
+                "addr:street": "Chalkpit Hill",
+                "addr:village": "Bekesbourne",
+                "amenity": "cafe",
+                "fhrs:id": "1102189",
+                "name": "Mama Feelgood's Coffee Shop",
+                "source:addr": "FHRS Open Data"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.14793170000,
+                    51.25487410000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "clock",
+                "display": "analog",
+                "faces": "2",
+                "support": "wall_mounted",
+                "visibility": "street"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12417150000,
+                    51.24713770000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "telephone",
+                "booth": "K6",
+                "covered": "booth",
+                "listed_status": "Grade II"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13591740000,
+                    51.22935840000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "addr:housenumber": "75",
+                "addr:postcode": "CT4 5LB",
+                "addr:street": "High Street",
+                "amenity": "pub",
+                "brewery": "yes",
+                "building": "yes",
+                "contact:phone": "+44 1227 832213",
+                "contact:website": "https://www.redlionbridge.co.uk/",
+                "fhrs:id": "1102923",
+                "name": "The Red Lion Inn",
+                "note:opening_hours": "Obvious error on website (12pm for Mo-Sa should be midnight) corrected.",
+                "opening_hours": "Mo-Sa 11:00-00:00; Su 12:00-23:00",
+                "outdoor_seating": "yes",
+                "source:addr": "FHRS Open Data;website",
+                "wikidata": "Q26391287"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12676880000,
+                            51.24503120000
+                        ],
+                        [
+                            1.12688070000,
+                            51.24510520000
+                        ],
+                        [
+                            1.12682070000,
+                            51.24514080000
+                        ],
+                        [
+                            1.12684860000,
+                            51.24515920000
+                        ],
+                        [
+                            1.12687370000,
+                            51.24517580000
+                        ],
+                        [
+                            1.12681650000,
+                            51.24520970000
+                        ],
+                        [
+                            1.12678200000,
+                            51.24518680000
+                        ],
+                        [
+                            1.12674060000,
+                            51.24521130000
+                        ],
+                        [
+                            1.12676680000,
+                            51.24522870000
+                        ],
+                        [
+                            1.12672910000,
+                            51.24525100000
+                        ],
+                        [
+                            1.12671300000,
+                            51.24524040000
+                        ],
+                        [
+                            1.12667550000,
+                            51.24526260000
+                        ],
+                        [
+                            1.12666120000,
+                            51.24525310000
+                        ],
+                        [
+                            1.12664220000,
+                            51.24526440000
+                        ],
+                        [
+                            1.12651610000,
+                            51.24518090000
+                        ],
+                        [
+                            1.12676880000,
+                            51.24503120000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 09:00; Sa 17:00",
+                "postal_code": "CT4",
+                "ref": "CT4 99",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.13336140000,
+                    51.23958820000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "addr:housenumber": "28",
+                "addr:postcode": "CT4 5JZ",
+                "addr:street": "High Street",
+                "amenity": "community_centre",
+                "building": "public",
+                "community_centre": "village_hall",
+                "fhrs:id": "1102698",
+                "level": "0",
+                "name": "Bridge Village Hall",
+                "operator": "Bridge Parish Council",
+                "source:addr": "FHRS Open Data;knowledge",
+                "website": "http://www.bridgevillagehall.org.uk/",
+                "wheelchair": "yes"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12420190000,
+                            51.24710730000
+                        ],
+                        [
+                            1.12392750000,
+                            51.24699960000
+                        ],
+                        [
+                            1.12384490000,
+                            51.24696720000
+                        ],
+                        [
+                            1.12380760000,
+                            51.24700440000
+                        ],
+                        [
+                            1.12379270000,
+                            51.24701930000
+                        ],
+                        [
+                            1.12380930000,
+                            51.24702580000
+                        ],
+                        [
+                            1.12387520000,
+                            51.24705160000
+                        ],
+                        [
+                            1.12414970000,
+                            51.24715940000
+                        ],
+                        [
+                            1.12417150000,
+                            51.24713770000
+                        ],
+                        [
+                            1.12417590000,
+                            51.24713330000
+                        ],
+                        [
+                            1.12420190000,
+                            51.24710730000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "amenity": "medical_centre",
+                "building": "yes",
+                "healthcare": "centre",
+                "name": "Bridge Health Centre",
+                "source": "Bing"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12938000000,
+                            51.24695160000
+                        ],
+                        [
+                            1.12932150000,
+                            51.24691690000
+                        ],
+                        [
+                            1.12946040000,
+                            51.24682500000
+                        ],
+                        [
+                            1.12944360000,
+                            51.24681500000
+                        ],
+                        [
+                            1.12952960000,
+                            51.24675820000
+                        ],
+                        [
+                            1.12966140000,
+                            51.24683630000
+                        ],
+                        [
+                            1.12959150000,
+                            51.24688250000
+                        ],
+                        [
+                            1.12961060000,
+                            51.24689380000
+                        ],
+                        [
+                            1.12956570000,
+                            51.24692340000
+                        ],
+                        [
+                            1.12954650000,
+                            51.24691200000
+                        ],
+                        [
+                            1.12942720000,
+                            51.24699080000
+                        ],
+                        [
+                            1.12937100000,
+                            51.24695750000
+                        ],
+                        [
+                            1.12938000000,
+                            51.24695160000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "collection_times": "Mo-Fr 17:30; Sa 11:45",
+                "operator": "Royal Mail",
+                "post_box:type": "pillar",
+                "ref": "CT4 254",
+                "royal_cypher": "EIIR",
+                "royal_cypher:wikidata": "Q33102113"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12343050000,
+                    51.24776450000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "black",
+                "survey:date": "2022-08-05",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12797010000,
+                    51.24740840000
                 ]
             }
         },
@@ -1913,17 +1160,683 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "clock",
-                "display": "analog",
-                "faces": "2",
-                "support": "wall_mounted",
-                "visibility": "street"
+                "access": "yes",
+                "amenity": "parking",
+                "capacity": "11",
+                "fee": "no",
+                "parking": "street_side"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12969060000,
+                            51.24632780000
+                        ],
+                        [
+                            1.12941100000,
+                            51.24616040000
+                        ],
+                        [
+                            1.12947420000,
+                            51.24611750000
+                        ],
+                        [
+                            1.12978310000,
+                            51.24628350000
+                        ],
+                        [
+                            1.12969060000,
+                            51.24632780000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "no",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2023-04-05"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.12417150000,
-                    51.24713770000
+                    1.12386980000,
+                    51.24589020000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "access": "yes",
+                "amenity": "grit_bin",
+                "material": "plastic",
+                "survey:date": "2023-07-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.11849140000,
+                    51.24600770000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "place_of_worship",
+                "building": "church",
+                "denomination": "anglican",
+                "name": "St Mary the Virgin, Bishopsbourne",
+                "religion": "christian",
+                "wikidata": "Q17529553"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.13250000000,
+                            51.23074180000
+                        ],
+                        [
+                            1.13210110000,
+                            51.23087500000
+                        ],
+                        [
+                            1.13205130000,
+                            51.23081650000
+                        ],
+                        [
+                            1.13245030000,
+                            51.23068340000
+                        ],
+                        [
+                            1.13250000000,
+                            51.23074180000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "atm",
+                "cash_in": "no",
+                "operator": "Cashzone"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12511130000,
+                    51.24633340000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-08-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12597810000,
+                    51.24558480000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "black",
+                "survey:date": "2022-06-16",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12608780000,
+                    51.24765470000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT4",
+                "ref": "CT4 222",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.14140400000,
+                    51.25947170000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "addr:postcode": "CT4 5JX",
+                "addr:street": "Conyngham Lane",
+                "amenity": "childcare",
+                "building": "yes",
+                "name": "Woodpeckers Nursery",
+                "operator": "Woodpeckers Nursery",
+                "operator:type": "private",
+                "website": "https://www.woodpeckersnursery.co.uk/"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12603400000,
+                            51.24813820000
+                        ],
+                        [
+                            1.12588570000,
+                            51.24802170000
+                        ],
+                        [
+                            1.12605870000,
+                            51.24793540000
+                        ],
+                        [
+                            1.12620700000,
+                            51.24805200000
+                        ],
+                        [
+                            1.12603400000,
+                            51.24813820000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Canterbury",
+                "addr:housename": "Highland Court Farm",
+                "addr:postcode": "CT4 5HW",
+                "amenity": "cafe",
+                "building": "yes",
+                "cuisine": "coffee_shop",
+                "name": "The Independent Pedaler"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.14847990000,
+                            51.23917380000
+                        ],
+                        [
+                            1.14832130000,
+                            51.23905350000
+                        ],
+                        [
+                            1.14845890000,
+                            51.23898140000
+                        ],
+                        [
+                            1.14862120000,
+                            51.23910860000
+                        ],
+                        [
+                            1.14847990000,
+                            51.23917380000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "addr:housename": "The Red Lion Inn",
+                "addr:housenumber": "75",
+                "addr:postcode": "CT4 5LB",
+                "addr:street": "High Street",
+                "amenity": "post_office",
+                "name": "The Red Lion Inn",
+                "opening_hours": "We,Fr 09:00-11:00",
+                "ref:pol_id": "168587"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12675830000,
+                    51.24509830000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "amenity": "place_of_worship",
+                "building": "church",
+                "denomination": "anglican",
+                "name": "St. Peter's",
+                "religion": "christian",
+                "wikidata": "Q17557230"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12695260000,
+                            51.24447280000
+                        ],
+                        [
+                            1.12687800000,
+                            51.24433290000
+                        ],
+                        [
+                            1.12709480000,
+                            51.24428760000
+                        ],
+                        [
+                            1.12712670000,
+                            51.24434750000
+                        ],
+                        [
+                            1.12723580000,
+                            51.24432470000
+                        ],
+                        [
+                            1.12725990000,
+                            51.24436990000
+                        ],
+                        [
+                            1.12716830000,
+                            51.24438910000
+                        ],
+                        [
+                            1.12718690000,
+                            51.24442380000
+                        ],
+                        [
+                            1.12695260000,
+                            51.24447280000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "survey:date": "2022-06-16",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12740250000,
+                    51.24691190000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "access": "yes",
+                "amenity": "grit_bin",
+                "material": "plastic",
+                "survey:date": "2023-07-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12050710000,
+                    51.24520260000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "red",
+                "material": "plastic",
+                "survey:date": "2022-08-14",
+                "waste": "dog_excrement"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12966450000,
+                    51.24299690000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "access": "customers",
+                "amenity": "parking",
+                "fee": "no",
+                "lit": "no",
+                "park_ride": "no",
+                "parking": "surface",
+                "smoothness": "intermediate",
+                "supervised": "no",
+                "surface": "ground"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.13570760000,
+                            51.23266580000
+                        ],
+                        [
+                            1.13593030000,
+                            51.23276400000
+                        ],
+                        [
+                            1.13641040000,
+                            51.23218040000
+                        ],
+                        [
+                            1.13624010000,
+                            51.23210980000
+                        ],
+                        [
+                            1.13570760000,
+                            51.23266580000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "place_of_worship",
+                "denomination": "anglican",
+                "name": "St Peter's Church",
+                "religion": "christian",
+                "source": "Bing",
+                "wikidata": "Q17529612"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.14431850000,
+                            51.25621130000
+                        ],
+                        [
+                            1.14427640000,
+                            51.25614880000
+                        ],
+                        [
+                            1.14447140000,
+                            51.25609740000
+                        ],
+                        [
+                            1.14443490000,
+                            51.25604310000
+                        ],
+                        [
+                            1.14463080000,
+                            51.25599140000
+                        ],
+                        [
+                            1.14470940000,
+                            51.25610820000
+                        ],
+                        [
+                            1.14431850000,
+                            51.25621130000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "post_box",
+                "postal_code": "CT4",
+                "ref": "CT4 194",
+                "source": "survey"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.15244240000,
+                    51.25544690000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "addr:housename": "Saxon Lodge",
+                "addr:housenumber": "30",
+                "addr:street": "Western Avenue",
+                "amenity": "social_facility",
+                "building": "apartments",
+                "name": "Saxon Lodge",
+                "social_facility": "nursing_home"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12271090000,
+                            51.24606750000
+                        ],
+                        [
+                            1.12300390000,
+                            51.24613450000
+                        ],
+                        [
+                            1.12299490000,
+                            51.24614980000
+                        ],
+                        [
+                            1.12303750000,
+                            51.24615960000
+                        ],
+                        [
+                            1.12302060000,
+                            51.24618850000
+                        ],
+                        [
+                            1.12305740000,
+                            51.24619690000
+                        ],
+                        [
+                            1.12295340000,
+                            51.24637530000
+                        ],
+                        [
+                            1.12261560000,
+                            51.24629800000
+                        ],
+                        [
+                            1.12265100000,
+                            51.24623750000
+                        ],
+                        [
+                            1.12283920000,
+                            51.24628050000
+                        ],
+                        [
+                            1.12286500000,
+                            51.24623630000
+                        ],
+                        [
+                            1.12283440000,
+                            51.24622940000
+                        ],
+                        [
+                            1.12284080000,
+                            51.24621850000
+                        ],
+                        [
+                            1.12279090000,
+                            51.24620710000
+                        ],
+                        [
+                            1.12279690000,
+                            51.24619670000
+                        ],
+                        [
+                            1.12265450000,
+                            51.24616410000
+                        ],
+                        [
+                            1.12271090000,
+                            51.24606750000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "telephone",
+                "booth": "KX100",
+                "check_date": "2022-10-05",
+                "covered": "booth"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12341060000,
+                    51.24780520000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "grave_yard"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.13237400000,
+                            51.23124330000
+                        ],
+                        [
+                            1.13281990000,
+                            51.23086500000
+                        ],
+                        [
+                            1.13228880000,
+                            51.23052580000
+                        ],
+                        [
+                            1.13190260000,
+                            51.23079950000
+                        ],
+                        [
+                            1.13177890000,
+                            51.23086190000
+                        ],
+                        [
+                            1.13234130000,
+                            51.23121640000
+                        ],
+                        [
+                            1.13237400000,
+                            51.23124330000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "black",
+                "survey:date": "2022-08-14",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12567020000,
+                    51.24590590000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "access": "customers",
+                "amenity": "parking",
+                "fee": "no"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.14824190000,
+                            51.25484010000
+                        ],
+                        [
+                            1.14820340000,
+                            51.25489640000
+                        ],
+                        [
+                            1.14779570000,
+                            51.25474020000
+                        ],
+                        [
+                            1.14803380000,
+                            51.25449670000
+                        ],
+                        [
+                            1.14828750000,
+                            51.25460820000
+                        ],
+                        [
+                            1.14816060000,
+                            51.25472680000
+                        ],
+                        [
+                            1.14824190000,
+                            51.25484010000
+                        ]
+                    ]
                 ]
             }
         },
@@ -1947,56 +1860,86 @@
             "type": "Feature",
             "properties": {
                 "amenity": "waste_basket",
-                "colour": "black",
-                "survey:date": "2022-08-14",
+                "recycling:glass": "yes",
+                "recycling:newspaper": "yes",
                 "waste": "litter"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.12567020000,
-                    51.24590590000
+                    1.12039020000,
+                    51.25054440000
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "amenity": "grave_yard"
+                "access": "yes",
+                "amenity": "grit_bin",
+                "material": "plastic",
+                "survey:date": "2023-07-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12398040000,
+                    51.24871560000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "place_of_worship",
+                "building": "church",
+                "denomination": "anglican",
+                "name": "St Mary's",
+                "religion": "christian",
+                "wikidata": "Q17529616"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            1.13600490000,
-                            51.25354620000
+                            1.13627930000,
+                            51.25348670000
                         ],
                         [
-                            1.13612120000,
-                            51.25371000000
+                            1.13634420000,
+                            51.25355650000
                         ],
                         [
-                            1.13682930000,
-                            51.25346490000
+                            1.13662250000,
+                            51.25345520000
                         ],
                         [
-                            1.13664160000,
-                            51.25334410000
+                            1.13655760000,
+                            51.25338540000
                         ],
                         [
-                            1.13644310000,
-                            51.25325680000
-                        ],
-                        [
-                            1.13617390000,
-                            51.25343190000
-                        ],
-                        [
-                            1.13600490000,
-                            51.25354620000
+                            1.13627930000,
+                            51.25348670000
                         ]
                     ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "Green",
+                "material": "plastic",
+                "survey:date": "2023-03-24",
+                "waste": "litter"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12407480000,
+                    51.24586660000
                 ]
             }
         },
@@ -2052,6 +1995,93 @@
         {
             "type": "Feature",
             "properties": {
+                "addr:city": "Bridge",
+                "addr:housenumber": "86",
+                "addr:postcode": "CT4 5LA",
+                "addr:street": "High Street",
+                "amenity": "pub",
+                "brewery": "yes",
+                "building": "yes",
+                "contact:phone": "+44 1227 507336",
+                "contact:website": "https://www.ploughandharrowbridge.co.uk/",
+                "fhrs:id": "1103406",
+                "name": "Plough & Harrow",
+                "opening_hours": "Mo-Fr 15:00-23:00;Sa-Su 12:00-23:00",
+                "outdoor_seating": "yes",
+                "source:addr": "FHRS Open Data",
+                "wikidata": "Q26391324"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12571610000,
+                            51.24517000000
+                        ],
+                        [
+                            1.12605150000,
+                            51.24534570000
+                        ],
+                        [
+                            1.12609210000,
+                            51.24530430000
+                        ],
+                        [
+                            1.12610450000,
+                            51.24528550000
+                        ],
+                        [
+                            1.12610250000,
+                            51.24527240000
+                        ],
+                        [
+                            1.12608580000,
+                            51.24526160000
+                        ],
+                        [
+                            1.12596280000,
+                            51.24517470000
+                        ],
+                        [
+                            1.12592030000,
+                            51.24520310000
+                        ],
+                        [
+                            1.12584710000,
+                            51.24515650000
+                        ],
+                        [
+                            1.12579010000,
+                            51.24511890000
+                        ],
+                        [
+                            1.12571610000,
+                            51.24517000000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "access": "yes",
+                "amenity": "grit_bin",
+                "material": "plastic",
+                "survey:date": "2023-07-11"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.11886270000,
+                    51.24656170000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "amenity": "grit_bin",
                 "material": "plastic",
                 "survey:date": "2023-04-05"
@@ -2067,37 +2097,45 @@
         {
             "type": "Feature",
             "properties": {
-                "addr:city": "Canterbury",
-                "addr:housename": "Highland Court Farm",
-                "addr:postcode": "CT4 5HW",
-                "amenity": "cafe",
+                "addr:city": "Bridge",
+                "addr:housenumber": "16",
+                "addr:postcode": "CT4 5JY",
+                "addr:street": "High Street",
+                "amenity": "pharmacy",
                 "building": "yes",
-                "cuisine": "coffee_shop",
-                "name": "The Independent Pedaler"
+                "dispensing": "yes",
+                "fhrs:id": "1102900",
+                "healthcare": "pharmacy",
+                "name": "Bridge Pharmacy",
+                "source:addr": "FHRS Open Data"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            1.14847990000,
-                            51.23917380000
+                            1.12348120000,
+                            51.24769460000
                         ],
                         [
-                            1.14832130000,
-                            51.23905350000
+                            1.12340230000,
+                            51.24776140000
                         ],
                         [
-                            1.14845890000,
-                            51.23898140000
+                            1.12333570000,
+                            51.24773060000
                         ],
                         [
-                            1.14862120000,
-                            51.23910860000
+                            1.12328370000,
+                            51.24770650000
                         ],
                         [
-                            1.14847990000,
-                            51.23917380000
+                            1.12336270000,
+                            51.24763970000
+                        ],
+                        [
+                            1.12348120000,
+                            51.24769460000
                         ]
                     ]
                 ]
@@ -2106,30 +2144,16 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "post_box",
-                "postal_code": "CT4",
-                "ref": "CT4 194",
-                "source": "survey"
+                "amenity": "bench",
+                "backrest": "no",
+                "material": "wood",
+                "survey:date": "2022-04-08"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.15244240000,
-                    51.25544690000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "townhall",
-                "name": "Bishopsbourne Village Hall"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    1.13512550000,
-                    51.23018150000
+                    1.13223710000,
+                    51.24371500000
                 ]
             }
         },
@@ -2140,86 +2164,74 @@
                 "addr:housenumber": "75",
                 "addr:postcode": "CT4 5LB",
                 "addr:street": "High Street",
-                "amenity": "pub",
-                "brewery": "yes",
+                "amenity": "marketplace",
+                "name": "Bridge Farmers Market",
+                "opening_hours": "Sa [2,4] 09:00-12:00",
+                "operator": "Kent Farmers Markets",
+                "website": "https://www.kfma.org.uk/Bridge"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12676280000,
+                    51.24527350000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2022-08-14"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12964070000,
+                    51.24297080000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "addr:city": "Bridge",
+                "addr:housenumber": "78",
+                "addr:postcode": "CT4 5LA",
+                "addr:street": "High Street",
+                "amenity": "dentist",
                 "building": "yes",
-                "contact:phone": "+44 1227 832213",
-                "contact:website": "https://www.redlionbridge.co.uk/",
-                "fhrs:id": "1102923",
-                "name": "The Red Lion Inn",
-                "note:opening_hours": "Obvious error on website (12pm for Mo-Sa should be midnight) corrected.",
-                "opening_hours": "Mo-Sa 11:00-00:00; Su 12:00-23:00",
-                "outdoor_seating": "yes",
-                "source:addr": "FHRS Open Data;website",
-                "wikidata": "Q26391287"
+                "healthcare": "dentist",
+                "name": "Bridge Dental Practice",
+                "phone": "+441227831110",
+                "website": "https://www.bridgepractice.dental/"
             },
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
                     [
                         [
-                            1.12676880000,
-                            51.24503120000
+                            1.12566960000,
+                            51.24557280000
                         ],
                         [
-                            1.12688070000,
-                            51.24510520000
+                            1.12569360000,
+                            51.24553830000
                         ],
                         [
-                            1.12682070000,
-                            51.24514080000
+                            1.12583310000,
+                            51.24557630000
                         ],
                         [
-                            1.12684860000,
-                            51.24515920000
+                            1.12580920000,
+                            51.24561070000
                         ],
                         [
-                            1.12687370000,
-                            51.24517580000
-                        ],
-                        [
-                            1.12681650000,
-                            51.24520970000
-                        ],
-                        [
-                            1.12678200000,
-                            51.24518680000
-                        ],
-                        [
-                            1.12674060000,
-                            51.24521130000
-                        ],
-                        [
-                            1.12676680000,
-                            51.24522870000
-                        ],
-                        [
-                            1.12672910000,
-                            51.24525100000
-                        ],
-                        [
-                            1.12671300000,
-                            51.24524040000
-                        ],
-                        [
-                            1.12667550000,
-                            51.24526260000
-                        ],
-                        [
-                            1.12666120000,
-                            51.24525310000
-                        ],
-                        [
-                            1.12664220000,
-                            51.24526440000
-                        ],
-                        [
-                            1.12651610000,
-                            51.24518090000
-                        ],
-                        [
-                            1.12676880000,
-                            51.24503120000
+                            1.12566960000,
+                            51.24557280000
                         ]
                     ]
                 ]
@@ -2228,17 +2240,116 @@
         {
             "type": "Feature",
             "properties": {
-                "amenity": "bicycle_parking",
-                "bicycle_parking": "wall_loops",
-                "capacity": "3",
-                "covered": "no",
-                "cyclestreets_id": "48419"
+                "access": "customers",
+                "amenity": "parking",
+                "fee": "no",
+                "parking": "surface"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            1.12975200000,
+                            51.24680870000
+                        ],
+                        [
+                            1.12987500000,
+                            51.24672900000
+                        ],
+                        [
+                            1.12953710000,
+                            51.24652470000
+                        ],
+                        [
+                            1.12942160000,
+                            51.24659950000
+                        ],
+                        [
+                            1.12937390000,
+                            51.24657070000
+                        ],
+                        [
+                            1.12903790000,
+                            51.24679520000
+                        ],
+                        [
+                            1.12923600000,
+                            51.24691120000
+                        ],
+                        [
+                            1.12954210000,
+                            51.24669730000
+                        ],
+                        [
+                            1.12952310000,
+                            51.24668560000
+                        ],
+                        [
+                            1.12958090000,
+                            51.24664900000
+                        ],
+                        [
+                            1.12959540000,
+                            51.24665780000
+                        ],
+                        [
+                            1.12955050000,
+                            51.24668690000
+                        ],
+                        [
+                            1.12975200000,
+                            51.24680870000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "waste_basket",
+                "colour": "black",
+                "material": "plastic",
+                "survey:date": "2023-04-05",
+                "waste": "dog_excrement"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    1.12947000000,
-                    51.24678870000
+                    1.12444430000,
+                    51.24427090000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "bench",
+                "backrest": "yes",
+                "material": "wood",
+                "seats": "3",
+                "survey:date": "2023-03-24"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.12401900000,
+                    51.24587360000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "veterinary",
+                "name": "Bourne Veterinary Practice"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.14801300000,
+                    51.25441840000
                 ]
             }
         }
