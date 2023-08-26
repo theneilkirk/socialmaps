@@ -1,0 +1,84 @@
+
+Create an HTML page that has a header 150px high, a sidebar 24% of the screen wide, and a main container to display a Leaflet map.
+
+The results from this HTTP request will contain an array of elements from OpenStreetMap:
+http://www.overpass-api.de/api/interpreter?data=[out:json][timeout:25];(nwr["amenity"="recycling"](51.0345,0.8212,51.4198,1.4845););out body;>;out skel qt;
+
+There are two types of elements: Nodes and Ways. Nodes have geographical coordinates and are represented in the Leaflet map as markers. Ways have a list of Nodes whose coordinates are used to plot the way as a Path in the Leaflet map. I've included samples json structures of the types of elements we'll be working with.
+
+Some of the elements have tags. Elements with an element.tag.amenity equal to "recycling" represents a recycling station. Nodes and Ways can be recycling stations.
+
+If elements have an element.tags.name, use the name on the elements Leaflet object as a Popup when a user clicks on it. If there is no element.tags.name then use "Recycling station" as the name.
+
+If elements have tags beginning with "recycling:" extract all the text after the colon, add them to an array and remove all duplicates. For example, from the element.tag "recycling:clothes" extract "clothes". Next create a set of checkboxes in the sidebar that will be used to control which of the recycling stations to show on the map. For example, if I check the checkbox for "clothes", all the recycling stations with the element.tags.recycling:clothes equal to "yes" should be displayed.
+
+Lastly, on each recycling stations Leaflet Popup with the name, display each of the accepted recycling types (element.tags.recycling:*=Yes).
+
+This is the structure of a simple node element with geographical coordinates:
+        {
+            "type": "node",
+            "id": 4988311615,
+            "lat": 51.3044935,
+            "lon": 0.8931273
+        }
+        
+
+This is the structure of a node element, with recycling tags, indicating a recycling station:
+        {
+            "type": "node",
+            "id": 10969114210,
+            "lat": 51.2558348,
+            "lon": 1.0189379,
+            "tags": {
+                "amenity": "recycling",
+                "colour": "blue",
+                "recycling:clothes": "yes",
+                "recycling:shoes": "yes",
+                "recycling_type": "container"
+            }
+        }
+
+And this is the structure of a way element, also representing a recycling station. Note the element.nodes which contains the nodes, and therefore, coordinates to plot in the Path:
+        {
+            "type": "way",
+            "id": 863158381,
+            "nodes": [
+                8040942997,
+                8040942998,
+                8040942999,
+                8040943000,
+                8040943001,
+                8040943002,
+                8040943003,
+                8040943004,
+                8040943005,
+                8040943006,
+                8040943007,
+                8040943008,
+                8040942997
+            ],
+            "tags": {
+                "amenity": "recycling",
+                "name": "Canterbury Household Waste Recycling Centre",
+                "operator": "Kent County Council",
+                "owner": "Kent County Council",
+                "ownership": "municipal",
+                "recycling:batteries": "yes",
+                "recycling:cans": "yes",
+                "recycling:cardboard": "yes",
+                "recycling:clothes": "yes",
+                "recycling:electrical_appliances": "yes",
+                "recycling:glass": "yes",
+                "recycling:glass_bottles": "yes",
+                "recycling:green_waste": "yes",
+                "recycling:paper": "yes",
+                "recycling:paper_packaging": "yes",
+                "recycling:scrap_metal": "yes",
+                "recycling:small_appliances": "yes",
+                "recycling:tetrapak": "yes",
+                "recycling:waste": "yes",
+                "recycling:wood": "yes",
+                "recycling_type": "centre",
+                "wikidata": "Q106093729"
+            }
+        }

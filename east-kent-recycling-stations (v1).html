@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 25%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        #map {
+            flex: 1;
+            height: 100%;
+        }
+    </style>
+    <title>Leaflet Map with Sidebar</title>
+</head>
+
+<body>
+    <div id="sidebar">
+        <h2>Sidebar</h2>
+        <p>This is the sidebar content.</p>
+        <h3>Accepted Recycling Types</h3>
+        <input type="checkbox" id="selectAll" onchange="selectAllCheckboxes()">
+        <label for="selectAll">Select/Unselect All</label>
+        <div id="recyclingCheckboxes" style="columns: 2;"></div>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([51.2097, 1.1687], 11);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Array to capture accepted recycling types
+        var acceptedRecyclingTypes = [];
+
+        var elementsOnMap = []; // To store references to markers or polygons on the map
+
+        // Fetch data from Overpass API and add markers or paths
+        fetch('http://www.overpass-api.de/api/interpreter?data=[out:json][timeout:25];(nwr["amenity"="recycling"](51.0345,0.8212,51.4198,1.4845););out body;>;out skel qt;')
+            .then(response => response.json())
+            .then(data => {
+                data.elements.forEach(element => {
+                    // Log element ID and coordinates (if it's a node)
+                    console.log('Element ID:', element.id);
+                    if (element.type === "node") {
+                        var lat = element.lat;
+                        var lon = element.lon;
+                        console.log('Coordinates:', lat, lon);
+
+                        // Assign name if tags exist and contains "name" tag, else use default name
+                        var name = (element.tags && element.tags.name) ? element.tags.name : "Recycling Station";
+
+                        var marker = L.marker([lat, lon]).bindPopup(name);
+                        elementsOnMap.push(marker);
+
+                        updateMapBasedOnCheckboxes();
+                    } else if (element.type === "way") {
+                        var nodeIds = element.nodes;
+                        var latLngs = nodeIds.map(nodeId => {
+                            var node = data.elements.find(el => el.id === nodeId);
+                            return L.latLng(node.lat, node.lon);
+                        });
+                        var polygon = L.polygon(latLngs, { fillColor: 'blue', fillOpacity: 0.4 });
+                        elementsOnMap.push(polygon);
+
+                        updateMapBasedOnCheckboxes();
+                    }
+
+                    // Check for accepted recycling types
+                    for (var tag in element.tags) {
+                        if (tag.startsWith("recycling:")) {
+                            var recyclingType = tag.split(":")[1];
+                            acceptedRecyclingTypes.push(recyclingType.toLowerCase());
+                        }
+                    }
+                });
+
+                // Remove duplicates and capitalize first letter of recycling types
+                var uniqueRecyclingTypes = [...new Set(acceptedRecyclingTypes)];
+                var recyclingCheckboxes = document.getElementById('recyclingCheckboxes');
+                uniqueRecyclingTypes.forEach(type => {
+                    var checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.id = type;
+                    checkbox.value = type;
+                    checkbox.checked = true; // By default, all checkboxes are selected
+                    checkbox.onchange = function() {
+                        updateMapBasedOnCheckboxes();
+                    };
+                    var label = document.createElement('label');
+                    label.textContent = type.charAt(0).toUpperCase() + type.slice(1);
+                    label.htmlFor = type;
+
+                    var checkboxContainer = document.createElement('div');
+                    checkboxContainer.appendChild(checkbox);
+                    checkboxContainer.appendChild(label);
+
+                    recyclingCheckboxes.appendChild(checkboxContainer);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching Overpass data:', error);
+            });
+
+        function selectAllCheckboxes() {
+            var checkboxes = document.querySelectorAll('#recyclingCheckboxes input[type="checkbox"]');
+            var selectAllCheckbox = document.getElementById('selectAll');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = selectAllCheckbox.checked;
+            });
+            updateMapBasedOnCheckboxes();
+        }
+
+    function updateMapBasedOnCheckboxes() {
+        var selectedRecyclingTypes = [];
+        var checkboxes = document.querySelectorAll('#recyclingCheckboxes input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            if (checkbox.checked) {
+                selectedRecyclingTypes.push(checkbox.value);
+            }
+        });
+
+        // Show/hide markers or polygons based on selected recycling types
+        elementsOnMap.forEach(element => {
+            if (element instanceof L.Marker) {
+                var recyclingType = element.getPopup().getContent().toLowerCase();
+                if (selectedRecyclingTypes.includes(recyclingType)) {
+                    element.addTo(map);
+                } else {
+                    map.removeLayer(element);
+                }
+            } else if (element instanceof L.Polygon) {
+                // Check if options exist before accessing tags
+                if (element.options && element.options.tags) {
+                    var recyclingType = element.options.tags.toLowerCase();
+                    if (selectedRecyclingTypes.includes(recyclingType)) {
+                        element.addTo(map);
+                    } else {
+                        map.removeLayer(element);
+                    }
+                }
+            }
+        });
+    }
+    </script>
+</body>
+
+</html>
