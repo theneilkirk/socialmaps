@@ -80,7 +80,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 var recyclingTypes = new Set(); // Use a Set to automatically remove duplicates
 
 // Make the HTTP request to Overpass API
-var overpassUrl = 'http://www.overpass-api.de/api/interpreter?data=[out:json][timeout:25];(nwr["amenity"="recycling"](51.0345,0.8212,51.4198,1.4845););out body;>;out skel qt;';
+var overpassUrl = 'https://www.overpass-api.de/api/interpreter?data=[out:json][timeout:25];(nwr["amenity"="recycling"](51.0345,0.8212,51.4198,1.4845););out body;>;out skel qt;';
 
 fetch(overpassUrl)
   .then(response => response.json())
