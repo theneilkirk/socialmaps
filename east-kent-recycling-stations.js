@@ -126,6 +126,8 @@ var recyclingTypes = new Set(); // Use a Set to automatically remove duplicates
 
 var recyclingTypesDropdown = document.getElementById('recyclingTypesDropdown');
 
+var defaultRecyclingType = "tetrapak"; // Default selected recycling type
+
 // Make the HTTP request to Overpass API
 var overpassUrl = 'http://www.overpass-api.de/api/interpreter?data=[out:json][timeout:25];(nwr["amenity"="recycling"](51.0345,0.8212,51.4198,1.4845););out body;>;out skel qt;';
 
@@ -154,6 +156,11 @@ fetch(overpassUrl)
         }
       }
     });
+    
+    // Function to format recycling type
+    function formatRecyclingType(type) {
+      return type.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    }
 
     // Convert Set to Array and sort alphabetically
     var uniqueRecyclingTypes = Array.from(recyclingTypes);
@@ -163,10 +170,10 @@ fetch(overpassUrl)
     uniqueRecyclingTypes.forEach(type => {
       var option = document.createElement('option');
       option.value = type;
-      option.textContent = type;
+      option.textContent = formatRecyclingType(type);
       recyclingTypesDropdown.appendChild(option);
     });
-
+    
     // Add event listener to filter elements based on selected recycling type
     recyclingTypesDropdown.addEventListener('change', function () {
       var selectedType = this.value;
@@ -179,7 +186,8 @@ fetch(overpassUrl)
       data.elements.forEach(element => {
         for (const key in element.tags) {
           var marker;
-          var text = element.tags.name ? "<p>"+element.tags.name+"</p>" : "<p>Recycling station</p>";
+          var popupText = element.tags.name ? "<p><strong>"+element.tags.name+"</strong></p>" : "<p><strong>Recycling station</strong></p>";
+          // popupText += "<p>Accepted recycling</p><ul>";
           if (key.startsWith('recycling:') && element.tags[key] === 'yes') {
             const recyclingType = key.split(':')[1];
             if (selectedType === '' || recyclingType === selectedType) {
@@ -190,12 +198,29 @@ fetch(overpassUrl)
                 marker = L.marker(coordinates[0]).addTo(map);
                 L.polyline(coordinates).addTo(map);
               }
-              marker.bindPopup(text);
+              /*
+              This code only displays the selected recycling type; more needs to be done to show ALL the recycling types for a clicked on recycling station
+              
+              if (key.startsWith('recycling:') && element.tags[key] === 'yes') {
+                const recyclingType = key.split(':')[1];
+                popupText += "<li>"+formatRecyclingType(recyclingType)+"</li>";
+              }
+              popupText += "</ul>";
+              */
+              marker.bindPopup(popupText);
             }
           }
         }
       });
     });
+    
+    // Set default selected recycling type
+    recyclingTypesDropdown.value = defaultRecyclingType;
+
+    // Programmatically trigger the 'change' event on recyclingTypesDropdown
+    var event = new Event('change');
+    recyclingTypesDropdown.dispatchEvent(event);
+
   })
   .catch(error => console.error('Error fetching Overpass data:', error));
 
