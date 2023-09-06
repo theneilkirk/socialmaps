@@ -28,3 +28,8 @@ select {
   padding: 5px;
   font-size: medium;
 }
+
+p {
+  width: 100%;
+  overflow-wrap: break-word;
+}

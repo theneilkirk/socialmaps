@@ -9,19 +9,18 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var userLat = 51.279;
 var userLng = 1.0763;
+var iconRedPin = L.icon({
+  iconUrl: 'pin-marker-red.png',
+  iconSize:     [29, 50], // size of the icon
+  iconAnchor:   [15, 50], // point of the icon which will correspond to marker's location
+  popupAnchor:  [0, -50] // point from which the popup should open relative to the iconAnchor
+});
 
 // Check if Geolocation is available in the browser
 if ("geolocation" in navigator) {
   try {
     // Get the user's current location and center the map
     navigator.geolocation.getCurrentPosition(function(position) {
-      var iconRedPin = L.icon({
-        iconUrl: 'pin-marker-red.png',
-        iconSize:     [29, 50], // size of the icon
-        iconAnchor:   [15, 50], // point of the icon which will correspond to marker's location
-        popupAnchor:  [0, -50] // point from which the popup should open relative to the iconAnchor
-      });
-      
       userLat = position.coords.latitude;
       userLng = position.coords.longitude;
       map.setView([userLat, userLng], 11);
@@ -50,6 +49,7 @@ var defaultRecyclingType = "tetrapak"; // Default selected recycling type
 // Make the HTTP request to Overpass API
 console.log('Fetching data from overpass');
 var overpassUrl = 'https://www.overpass-api.de/api/interpreter?data=[out:json][timeout:25];(nwr["amenity"="recycling"](' + swLat + ',' + swLng + ',' + neLat + ',' + neLng + '););out body;>;out skel qt;';
+var recycling_stations;
 
 fetch(overpassUrl)
   .then(response => response.json())
@@ -103,44 +103,65 @@ fetch(overpassUrl)
           map.removeLayer(layer);
         }
       });
+
+      // Add a marker at the user's location (optional)
+      L.marker([userLat, userLng], {icon: iconRedPin}).addTo(map)
+        .bindPopup('Your Location');
       
       var iconRecycling = L.icon({
         iconUrl: 'recycling.png',
-        iconSize:     [29, 50], // size of the icon
+        iconSize:     [40, 40], // size of the icon
         iconAnchor:   [15, 50], // point of the icon which will correspond to marker's location
         popupAnchor:  [0, -50] // point from which the popup should open relative to the iconAnchor
       });
       var iconRecyclingBin = L.icon({
-        iconUrl: 'recycling-bin.png.png',
-        iconSize:     [29, 50], // size of the icon
+        iconUrl: 'recycling-bin.png',
+        iconSize:     [29, 30], // size of the icon
         iconAnchor:   [15, 50], // point of the icon which will correspond to marker's location
         popupAnchor:  [0, -50] // point from which the popup should open relative to the iconAnchor
       });
 
       data.elements.forEach(element => {
+        var recyclingStation = {};
+        var icon = {icon: iconRecyclingBin};
+        var showMarker = false;
+        var marker;
+        var popupText = '';
+        if (element.tags && element.tags.name)
+          popupText += '<h3>'+element.tags.name+'</h3>';
+        else
+          popupText += '<h3>Recycling Container</h3>'
+        popupText += '<h4>Accepted recycling</h4>';
+        
         for (const key in element.tags) {
-          var marker;
-          var popupText = element.tags.name ? "<p><strong>"+element.tags.name+"</strong></p>" : "<p><strong>Recycling station</strong></p>";
-          // popupText += "<p>Accepted recycling</p><ul>";
           if (key.startsWith('recycling:') && element.tags[key] === 'yes') {
             const recyclingType = key.split(':')[1];
-            if (selectedType === '' || recyclingType === selectedType) {
-              if (element.type === 'node') {
-                marker = L.marker([element.lat, element.lon]).addTo(map);
-              } else if (element.type === 'way') {
-                var coordinates = element.nodes.map(nodeId => [data.elements.find(node => node.id === nodeId).lat, data.elements.find(node => node.id === nodeId).lon]);
-                marker = L.marker(coordinates[0]).addTo(map);
-                L.polyline(coordinates).addTo(map);
-              }
-              marker.bindPopup(popupText);
-            }
+            popupText += recyclingType+', ';
           }
+          if (key == 'recycling_type' && element.tags[key] == 'centre') {
+            icon = {icon: iconRecycling};
+          } else if (element.tags[key] == 'container') {
+            icon = {icon: iconRecyclingBin};
+          }
+        
+          if (selectedType === '' || recyclingType === selectedType) {
+            showMarker = true;
+          }
+        }
+        popupText += '</p>';
+        
+        if (showMarker) {
+          if (element.type === 'node') {
+            marker = L.marker([element.lat, element.lon], icon).addTo(map);
+          } else if (element.type === 'way') {
+            var coordinates = element.nodes.map(nodeId => [data.elements.find(node => node.id === nodeId).lat, data.elements.find(node => node.id === nodeId).lon]);
+            marker = L.marker(coordinates[0], icon).addTo(map);
+            L.polyline(coordinates).addTo(map);
+          }
+          marker.bindPopup(popupText);
         }
       });
     });
-    
-    // Set default selected recycling type
-    recyclingTypesDropdown.value = defaultRecyclingType;
 
     // Programmatically trigger the 'change' event on recyclingTypesDropdown
     var event = new Event('change');
