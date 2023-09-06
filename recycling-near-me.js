@@ -1,5 +1,5 @@
 // Initialize the Leaflet map
-var map = L.map('map').setView([0, 0], 11); // Default to (0, 0) with zoom level 11
+var map = L.map('map').setView([0, 0], 15); // Default to (0, 0) with zoom level 11
 
 // Add a tile layer to the map (e.g., OpenStreetMap)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
