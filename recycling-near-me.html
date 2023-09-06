@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling Near Me</title>
+    <link rel="stylesheet" href="recycling-near-me.css">
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <table>
+          <tr>
+            <td>What do you need to recycle?</td>
+            <td>
+              <select id="recyclingTypesDropdown">
+                <option value="">Select Recycling Type</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+    </header>
+
+    <!-- Content with Leaflet map container -->
+    <div class="content">
+        <div id="map" style="width: 95%; height: 95%; margin: auto;"></div>
+    </div>
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- JavaScript to toggle the sidebar on mobile and initialize the map -->
+    <script src="recycling-near-me.js"></script>
+</body>
+</html>
+

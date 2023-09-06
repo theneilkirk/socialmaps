@@ -15,7 +15,7 @@ body {
 }
 
 #sidebar {
-  width: 15%;
+  width: 20%;
   background-color: #f1f1f1;
   float: left;
   height: calc(100vh - 50px);
@@ -23,7 +23,7 @@ body {
 }
 
 #map {
-  width: 85%;
+  width: 80%;
   height: calc(100vh - 50px);
   float: right;
 }
