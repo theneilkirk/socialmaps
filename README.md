@@ -1,6 +1,11 @@
 # leafletmaps
 
-Maps are generated using geojson data from various sources. Details on each map.
+Maps are generated using open data from various sources. Details on each map.
+
+## Recycling Near Me
+Find recycling stations for various materials near you!
+
+[Recycling Near Me](recycling-near-me.html)
 
 ## Bridge Village Amenities
 
