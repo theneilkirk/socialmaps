@@ -137,16 +137,16 @@ fetch(overpassUrl)
           if (key.startsWith('recycling:') && element.tags[key] === 'yes') {
             const recyclingType = key.split(':')[1];
             popupText += recyclingType+', ';
+            if (selectedType === '' || recyclingType === selectedType) {
+              showMarker = true;
+            }
           }
           if (key == 'recycling_type' && element.tags[key] == 'centre') {
             icon = {icon: iconRecycling};
           } else if (element.tags[key] == 'container') {
             icon = {icon: iconRecyclingBin};
           }
-        
-          if (selectedType === '' || recyclingType === selectedType) {
-            showMarker = true;
-          }
+          
         }
         popupText += '</p>';
         
