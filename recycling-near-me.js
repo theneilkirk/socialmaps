@@ -1,5 +1,5 @@
 // Initialize the Leaflet map
-var map = L.map('map').setView([0, 0], 15); // Default to (0, 0) with zoom level 11
+var map = L.map('map').setView([0, 0], 11); // Default to (0, 0) with zoom level 11
 
 // Add a tile layer to the map (e.g., OpenStreetMap)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -11,9 +11,9 @@ var userLat = 51.279;
 var userLng = 1.0763;
 var iconRedPin = L.icon({
   iconUrl: 'pin-marker-red.png',
-  iconSize:     [29, 50], // size of the icon
-  iconAnchor:   [15, 50], // point of the icon which will correspond to marker's location
-  popupAnchor:  [0, -50] // point from which the popup should open relative to the iconAnchor
+  iconSize: [29, 50], // size of the icon
+  iconAnchor: [15, 50], // point of the icon which will correspond to marker's location
+  popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor
 });
 
 // Check if Geolocation is available in the browser
@@ -23,12 +23,7 @@ if ("geolocation" in navigator) {
     navigator.geolocation.getCurrentPosition(function(position) {
       userLat = position.coords.latitude;
       userLng = position.coords.longitude;
-      map.setView([userLat, userLng], 11);
-      console.log("User: " + userLat + "," + userLng);
-
-      // Add a marker at the user's location (optional)
-      L.marker([userLat, userLng], {icon: iconRedPin}).addTo(map)
-        .bindPopup('Your Location');
+      map.setView([userLat, userLng], 14);
     });
   } catch (error) {
     console.error("Error accessing geolocation:", error);
@@ -44,7 +39,6 @@ var neLng = userLng + 0.25;
 
 var recyclingTypes = new Set(); // Use a Set to automatically remove duplicates
 var recyclingTypesDropdown = document.getElementById('recyclingTypesDropdown');
-var defaultRecyclingType = "tetrapak"; // Default selected recycling type
 
 // Make the HTTP request to Overpass API
 console.log('Fetching data from overpass');
@@ -93,63 +87,65 @@ fetch(overpassUrl)
       option.textContent = formatRecyclingType(type);
       recyclingTypesDropdown.appendChild(option);
     });
-    
-    
+
+
     // Add event listener to filter elements based on selected recycling type
-    recyclingTypesDropdown.addEventListener('change', function () {
+    recyclingTypesDropdown.addEventListener('change', function() {
       var selectedType = this.value;
-      map.eachLayer(function (layer) {
+      map.eachLayer(function(layer) {
         if (layer instanceof L.Marker || layer instanceof L.Polyline) {
           map.removeLayer(layer);
         }
       });
 
-      // Add a marker at the user's location (optional)
-      L.marker([userLat, userLng], {icon: iconRedPin}).addTo(map)
-        .bindPopup('Your Location');
-      
       var iconRecycling = L.icon({
         iconUrl: 'recycling.png',
-        iconSize:     [40, 40], // size of the icon
-        iconAnchor:   [15, 50], // point of the icon which will correspond to marker's location
-        popupAnchor:  [0, -50] // point from which the popup should open relative to the iconAnchor
+        iconSize: [40, 40], // size of the icon
+        iconAnchor: [15, 50], // point of the icon which will correspond to marker's location
+        popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor
       });
       var iconRecyclingBin = L.icon({
         iconUrl: 'recycling-bin.png',
-        iconSize:     [29, 30], // size of the icon
-        iconAnchor:   [15, 50], // point of the icon which will correspond to marker's location
-        popupAnchor:  [0, -50] // point from which the popup should open relative to the iconAnchor
+        iconSize: [29, 30], // size of the icon
+        iconAnchor: [15, 50], // point of the icon which will correspond to marker's location
+        popupAnchor: [0, -50] // point from which the popup should open relative to the iconAnchor
       });
 
       data.elements.forEach(element => {
         var recyclingStation = {};
-        var icon = {icon: iconRecyclingBin};
+        var icon = {
+          icon: iconRecyclingBin
+        };
         var showMarker = false;
         var marker;
         var popupText = '';
         if (element.tags && element.tags.name)
-          popupText += '<h3>'+element.tags.name+'</h3>';
+          popupText += '<h3>' + element.tags.name + '</h3>';
         else
           popupText += '<h3>Recycling Container</h3>'
         popupText += '<h4>Accepted recycling</h4>';
-        
+
         for (const key in element.tags) {
           if (key.startsWith('recycling:') && element.tags[key] === 'yes') {
             const recyclingType = key.split(':')[1];
-            popupText += recyclingType+', ';
+            popupText += recyclingType + ', ';
             if (selectedType === '' || recyclingType === selectedType) {
               showMarker = true;
             }
           }
           if (key == 'recycling_type' && element.tags[key] == 'centre') {
-            icon = {icon: iconRecycling};
+            icon = {
+              icon: iconRecycling
+            };
           } else if (element.tags[key] == 'container') {
-            icon = {icon: iconRecyclingBin};
+            icon = {
+              icon: iconRecyclingBin
+            };
           }
-          
+
         }
         popupText += '</p>';
-        
+
         if (showMarker) {
           if (element.type === 'node') {
             marker = L.marker([element.lat, element.lon], icon).addTo(map);
@@ -160,6 +156,12 @@ fetch(overpassUrl)
           }
           marker.bindPopup(popupText);
         }
+
+        // Add a marker at the user's location
+        L.marker([userLat, userLng], {
+            icon: iconRedPin
+          }).addTo(map)
+          .bindPopup('Your Location');
       });
     });
 
@@ -168,5 +170,4 @@ fetch(overpassUrl)
     recyclingTypesDropdown.dispatchEvent(event);
 
   })
-  .catch(error => console.error('Error fetching Overpass data:', error));
-console.log(recyclingTypes);
+  .catch(error => console.error('Error:', error));
