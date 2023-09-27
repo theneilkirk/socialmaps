@@ -2,10 +2,18 @@
 
 Maps are generated using open data from various sources. Details on each map.
 
+## Independent Shops Near Me
+
+Spending your money with local businesses helps support the local economy and is overall more beneficial to society than spending money at chains.
+
+This map will use your location to find non-branded businesses!
+
+[Independents Near Me](independent-businesses/index.html)
+
 ## Recycling Near Me
 Find recycling stations for various materials near you!
 
-[Recycling Near Me](recycling-near-me.html)
+[Recycling Near Me](recycling-near-me/recycling-near-me.html)
 
 ## Bridge Village Amenities
 

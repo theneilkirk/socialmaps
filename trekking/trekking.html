@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking Amenities</title>
+    <link rel="stylesheet" href="trekking.css">
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <table>
+          <tr>
+            <td>Select amenity?</td>
+            <td>
+              <select id="amenitiesDropdown">
+                <option value="">Select amenity</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+    </header>
+
+    <!-- Content with Leaflet map container -->
+    <div class="content">
+        <div id="map" style="width: 95%; height: 95%; margin: auto;"></div>
+    </div>
+
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- JavaScript to toggle the sidebar on mobile and initialize the map -->
+    <script src="trekking.js"></script>
+</body>
+</html>
+
