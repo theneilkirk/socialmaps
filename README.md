@@ -1,31 +1,9 @@
-# leafletmaps
+# Social Maps
 
-Maps are generated using open data from various sources. Details on each map.
+I'm an active contributor to OpenStreetMap and I've always wanted to be able to use the data. Using my limited coding skills and ChatGPT, I've created some maps that I hope can bring about some good in the world.
 
-## Independent Shops Near Me
+The displayed data is retrieved from OpenStreetMap via the Overpass API.
 
-Spending your money with local businesses helps support the local economy and is overall more beneficial to society than spending money at chains.
+I'm sure there are many areas for improvements. Suggestions/contributions welcome.
 
-This map will use your location to find non-branded businesses!
-
-[Independents Near Me](independent-businesses/index.html)
-
-## Recycling Near Me
-Find recycling stations for various materials near you!
-
-[Recycling Near Me](recycling-near-me/recycling-near-me.html)
-
-## Bridge Village Amenities
-
-[All amenities](/bridge-amenities.html)
-
-* [Bins in Bridge, UK](/bridge-bins.html)
-* [Benches in Bridge, UK](/bridge-benches.html)
-* [Conservation areas in Bridge, UK](/bridge-uk-conservation-areas.html)
-* [Defribrillators (AEDs) in Bridge, UK](/bridge-aeds.html)
-* [Postal Services in Bridge, UK](/bridge-postal-services.html)
-
-## East Kent Amenities
-
-* [Postboxes in South Canterbury](/bridge-uk-postboxes.html)
-* [Recycling stations in East Kent](/east-kent-recycling-stations.html)
+* **[Independent Businesses](/independent-businesses/index.html)**: Find non-branded shops, amenities, and services in your area. Spending money in the local economy is better than spending it in the corporate economy. The money tends to stay and circulate more within the local area. Whereas corporations remove money from an area, generally to whereever they are headquartered.

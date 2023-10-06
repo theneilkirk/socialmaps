@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Independent Businesses in Canterbury</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- Include Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 </head>
@@ -13,7 +13,7 @@
         <table>
           <tr>
             <td>Select the type of shop to display</td>
-            <td><select id="amenitiesDropdown"></select></td>
+            <td><select id="typeDropdown"></select></td>
             <td><button id="reloadButton">Reload</button>
           </tr>
         </table>
@@ -22,13 +22,14 @@
 
     <!-- Content with Leaflet map container -->
     <div class="content">
-        <div id="map" style="width: 95%; height: 95%; margin: auto;"></div>
+        <div id="map" style="width: 95%; height: 85%; margin: auto;"></div>
     </div>
 
     <!-- Include Leaflet JavaScript -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <!-- JavaScript to toggle the sidebar on mobile and initialize the map -->
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="../icons/mapImagery.js"></script>
 </body>
 </html>
 
